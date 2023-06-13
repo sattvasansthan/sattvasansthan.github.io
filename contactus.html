@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SATTVASANSTHAN</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="assets/css/lightbox.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+  </head>
+  <body ng-app="thankam">
+   
+      
+     
+      
+      
+        
+      
+      
+      <div style="z-index:99999" class="container-fluid">
+                      <div id="sm-menu" class="menu-sd">
+                        <div class="row menu-top-smd">
+                          <i onclick="hideSM()" class="fa fa-times"></i>
+                        </div>
+
+                            <ul  style="margin-top: 30px;" class="menu-itmen-sm">
+                                      <li onclick="hideSM()"  id="mm1" onlick="changeSelect(1)" class="active  mom"> <a href="index.html" >
+                                        <i class="fa fa-home"></i>
+                                         Home</a></li>
+
+                                       <li onclick="hideSM()" class="mom" id="mm2" onclick="changeSelect(2)" > <a href="aboutus.html">
+                                       <i class="fa fa-shield"></i>
+                                         About Us</a></li>   
+
+                                     <li  onclick="hideSM()" class="mom" id="mm3" onclick="changeSelect(3)"  > <a href="supportus.html">
+                                         <i class="fa fa-credit-card"></i>
+                                         Support Us</a></li>
+                                     <li onclick="hideSM()" class="mom" id="mm4" onclick="changeSelect(4)"  > <a href="gallery.html">
+                                        <i class="fa fa-photo"></i>
+                                         Gallery</a></li>
+                                     <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="healthcare.html">
+                                         <i class="fa fa-user"></i>
+                                         Healthcare</a></li>
+                                         <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="education.html">
+                                          <i class="fa fa-user"></i>
+                                          Education</a></li>
+                                          <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="rural-development.html">
+                                            <i class="fa fa-user"></i>
+                                            Rural Development</a></li>
+                                     <li onclick="hideSM()" class="mom" id="mm6" onclick="changeSelect(6)" > <a href="livelihood.html">
+                                         <i class="fa fa-newspaper-o"></i>
+                                         Livelihood</a></li>
+                                    <li onclick="hideSM()" class="mom" id="mm7"  onclick="changeSelect(7)"  > <a href="contactus.html">
+                                        <i class=" fa fa-map-marker"></i>
+                                        Contact Us</a></li>
+                                     
+                                </ul>
+
+                            
+                      </div>
+
+                <div class="mobile-head shado-1 visible-xs">
+                        <img style="width:50px;" class="logo" src="assets/images/logo.png">
+                            <h1 style="width:70%">SATTVASANSTHAN</h1>
+                            <b style="margin-left: 4px;">Belive in helping hands</b>
+
+                            <i onclick="showSM()" class="fa fa-navicon smal-menu-ico cp"></i>
+                </div>
+
+                <header class="hidden-xs">
+                    
+                    <nav style="position: absolute;" class="navmenu">
+                        <div style="margin:auto" >
+                            <div class="nav-content shado-1">
+
+                              <div class="container">
+                                <div style="height: 94px; overflow: hidden" class="col-md-4 col-sm-12">
+                                     <img style="width:90px;" class="logo" src="assets/images/logo.png">
+                                    <h1 style="width:70%">SATTVASANSTHAN</h1>
+                                     <b style="margin-left: 4px;">Belive in helping hands</b>
+                                 </div>
+                                  <div style="height: 94px; overflow: hidden"  class="col-md-8 hidden-sm">
+                                        
+                                      
+                                      <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat"><i class="fa fa-inr"></i> Donate Now</button>
+                                      
+                                        <ul class="top-right">
+                                                <li ><i class="fa fa-linkedin-square"></i></li>
+
+                                                 <li><i class="fa fa-google-plus-square"></i></li>
+                                                 <li><i class="fa fa-tumblr-square"></i></li>
+                                                 <li><i class="fa fa-instagram"></i></li>
+                                                 <li class="bll-o"><i class="fa fa-facebook-square"></i></li>
+
+
+                                            </ul>
+
+                                            <div class="exu">
+                                               <i class="fa fa-phone"></i> :  +91 7702054111
+                                                <i style="margin-left: 30px;" class="fa fa-envelope"></i> :  sattvasansthan@gmail.com
+                                            </div>
+                                  </div>
+                             
+                                 
+                                
+                                </div>
+
+
+
+                                <div>
+                                      
+
+                                </div>
+                            </div>
+                            <div class="my-nav shado-1">
+                                <div class="container">
+                                    <ul  class="nav-menu1">
+                                      <li onclick="hideSM()"  id="mm1" onlick="changeSelect(1)" class="active  mom"> <a href="index.html" >
+                                        <i class="fa fa-home"></i>
+                                         Home</a></li>
+
+                                       <li onclick="hideSM()" class="mom" id="mm2" onclick="changeSelect(2)" > <a href="aboutus.html">
+                                       <i class="fa fa-shield"></i>
+                                         About Us</a></li>   
+                                    
+                                     <li  onclick="hideSM()" class="mom" id="mm3" onclick="changeSelect(3)"  > <a href="supportus.html">
+                                         <i class="fa fa-credit-card"></i>
+                                         Support Us</a></li>
+                                     <li onclick="hideSM()" class="mom" id="mm4" onclick="changeSelect(4)"  > <a href="gallery.html">
+                                        <i class="fa fa-photo"></i>
+                                         Gallery</a></li>
+                                         <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="healthcare.html">
+                                          <i class="fa fa-user"></i>
+                                          Healthcare</a></li>
+                                          <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="education.html">
+                                           <i class="fa fa-user"></i>
+                                           Education</a></li>
+                                           <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="rural-development.html">
+                                             <i class="fa fa-user"></i>
+                                             Rural Development</a></li>
+                                      <li onclick="hideSM()" class="mom" id="mm6" onclick="changeSelect(6)" > <a href="livelihood.html">
+                                          <i class="fa fa-newspaper-o"></i>
+                                          Livelihood</a></li>
+                                    <li onclick="hideSM()" class="mom" id="mm7"  onclick="changeSelect(7)"  > <a href="contactus.html">
+                                        <i class=" fa fa-map-marker"></i>
+                                        Contact Us</a></li>
+                                     
+                                </ul>
+                                </div>
+                              
+                            </div>
+                            
+                            
+                        </div>
+                    </nav>
+                    <div class="header-top shado-6">
+                        <div style="z-index: 999999;" class="container">
+                        
+                        <ul class="top-left">
+                            <li class="rit-border"> Donate </li>
+                            <li class="rit-border"> Join Volunteer </li>
+                            <li> 7702054111 </li>
+                        </ul>
+                            
+                        
+                            <ul class="top-right">
+                                <li><i class="fa fa"></i></li>
+                                
+                                 
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                </header>
+          
+         
+          
+          
+          
+          
+          
+      </div>
+
+
+
+
+
+
+  <!---************************** Header content Ends Here ***************-->    
+
+
+
+
+<div  class="home-cont">
+
+
+
+
+<div  class="container-fluid sldddd">
+      <!--div class="map">
+<iframe src="https://www.google.com/maps/place/Sattvasansthan/@26.2001766,73.0145847,16z/data=!4m5!3m4!1s0x39418b0b24eaa96b:0xd25440ac41129952!8m2!3d26.1989287!4d73.0257691" style="width:100%;" height="450" frameborder="0" style="border:0"></iframe>
+
+      </div-->
+          
+          
+          
+          
+          
+          
+          
+          <div class="container tmon row">
+           
+          
+
+          
+
+          
+              
+              <div class="col-sm-6">
+                <div class="row">
+
+                <div class="row hed">
+              
+                  <h2>Testimonials</h2>
+                </div>
+                  
+
+                  <div style="height: 370px;  min-width: 300px" class="filter shado-2 inner-cint">
+                    <b> <i class="fa fa-send"></i> ⁠</b>
+
+                    <table style="width:100%;">
+                        <tbody><tr>
+                            <td><i class="fa fa-user"></i></td>
+                            <td><input class="form-control input-sm" placeholder="Name" type="text"> </td>
+                        </tr>
+
+
+
+
+
+
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td><input class="form-control input-sm" placeholder="Email Address" type="text"> </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td><i class="fa fa-phone"></i></td>
+                            <td><input class="form-control input-sm" placeholder="Mobile No" type="text"> </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-envelope"></i></td>
+                            <td>
+                                <textarea style="height: 60px !important;" class="form-control ctxtar" placeholder="Your Message"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-success cust" style="width: 100%">
+                                Send</button> </td>
+                        </tr>
+
+                        </tbody></table>
+
+                </div>
+
+
+
+                 
+
+                </div>
+
+              </div>
+
+               
+
+
+
+
+
+
+
+               <div  style="padding: 10% !important" class="col-sm-6 col-xs-12 addr">
+
+                
+                 <b>Address</b>
+             
+             <p style="font-size:15px;">Sttava Sansthan<br>
+             
+              Plot No 230 <br>
+                 
+              Sector 0 Vivek Vihar Sangharia, <br>
+                 
+              Jodhpur- 342005 <br>
+                 
+              email:sattvasansthan@gmail.com
+ <br>
+                mobile:+91 7702054111 
+             
+             </p>
+
+
+
+               </div>
+
+
+
+
+
+
+
+
+
+
+              
+          
+          
+          
+          
+           
+          
+          
+          
+          
+          
+          
+          
+          
+          
+               <div  class="container-fluid sldddd">
+               <div class="container gall">
+                <div class="row hed">
+                  
+                  <h2>News Article</h2>
+                  </div>
+              
+                  
+    
+    
+    
+                   <div class="col-sm-3">
+                        <div class="g-cont ">
+                            <a class="example-image-link" href="assets/images/gallery/n1.jpeg" data-lightbox="example-1"><img class="example-image" src="assets/images/gallery/n1.jpeg" alt="image-1" /></a>
+                        </div>
+    
+                   </div> 
+    
+    
+    
+                   <div class="col-sm-3">
+                        <div class="g-cont ">
+                            <a class="example-image-link" href="assets/images/gallery/n2.jpeg" data-lightbox="example-1"><img class="example-image" src="assets/images/gallery/n2.jpeg" alt="image-1" /></a>
+                        </div>
+    
+                   </div> 
+    
+                   <div class="col-sm-3">
+                        <div class="g-cont ">
+                            <a class="example-image-link" href="assets/images/gallery/n3.jpeg" data-lightbox="example-1"><img class="example-image" src="assets/images/gallery/n3.jpeg" alt="image-1" /></a>
+                        </div>
+    
+                   </div> 
+    
+                   <div class="col-sm-3">
+                        <div class="g-cont ">
+                            <a class="example-image-link" href="assets/images/gallery/n8.jpeg" data-lightbox="example-1"><img class="example-image" src="assets/images/gallery/n8.jpeg" alt="image-1" /></a>
+                        </div>
+    
+                   </div> 
+    
+                   <div class="col-sm-3">
+                        <div class="g-cont ">
+                            <a class="example-image-link" href="assets/images/gallery/n5.jpeg" data-lightbox="example-1"><img class="example-image" src="assets/images/gallery/n5.jpeg" alt="image-1" /></a>
+                        </div>
+    
+                   </div> 
+    
+  
+          
+          
+        </div> 
+        </div>
+         
+      
+      
+      
+      
+      
+      
+          
+          
+          
+          
+          
+          
+          
+ </div>        
+
+
+</div> 
+
+
+
+  <!---************************** Body content Ends Here ***************-->  
+
+
+  <footer style="margin-top:25px;">
+    
+    <div class="container foot-cont">
+        <div class="col-sm-4">
+            <b>About Us</b>
+            <p>
+              Sattvasansthan is a Non Government & Non Profit organization since 2004 registered under Society Registration Act, 1958 at Jodhpur, Rajasthan (India). Your support will go a long way in helping us in our efforts. Any amount of money you give will be appreciated. Donate now to support our mission towards underlying problems of poverty in India.
+            </p>
+        </div>
+         <div class="col-sm-3">
+            <b>Address</b>
+             
+             <p style="font-size:15px;">Sattvasansthan Foundation<br>
+             
+              Plot No 230 <br>
+                 
+              Sector 0 Vivek Vihar Sangharia , <br>
+                 
+              Jodhpur- 342005 <br>
+                 
+                email:sattvasansthan@gmail.com
+ <br>
+             
+             </p>
+             
+        </div>
+        
+        <div class="col-sm-5 scmsug">
+            <b style="text-align:center; width:100%; margin-left:30%;">Working Hours</b>
+            <ul class="wh">
+                <li>Monday   <b> 9.30 AM to 6.00PM</b></li>
+                <li>Tuesday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Wednesday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Thursday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Friday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Saturday  <b> 9.30 AM to 6.00PM</b></li>
+            </ul>
+        </div>
+        
+        
+    </div>
+    
+     <div class=" smarti">
+            <div class="container">
+            <p>All Rights Reserved &copy; Sattvasansthan | Designed By Saurabh
+                
+                <i class="fa fa-twitter fico-s hidden-xs"></i>
+                 <i class="fa fa-pinterest-p fico-s hidden-xs"></i>
+                 <i class="fa fa-google-plus fico-s hidden-xs"></i>
+                 <i class="fa fa-facebook fico-s hidden-xs"></i>
+                    
+                   
+                
+               
+                
+                
+                
+                </p>
+         
+                
+                
+         </div>
+        </div>
+    
+    </footer>
+      
+      
+      
+          
+          
+          
+          
+      
+      </div>
+       
+      
+      
+      
+      <div style="z-index: 999999; margin-top: 10%;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div style="width:450px;" class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Donate Now</h4>
+      </div>
+      <div style="padding: 20px;" class="modal-body">
+        
+        <b>UCO Bank, JODHPUR.</b><br>
+        <b>IFSC Code:UCBA0002722.</b><br>
+        <b>Name: Sattvasansthan</b><br>
+        <b>A/C No: 27220110068595.</b><br>
+      </div>
+     
+    </div>
+  </div>
+</div>
+      
+      
+      
+      
+
+  </body>
+
+
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-ui-router.min.js"></script>      
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+</html>
