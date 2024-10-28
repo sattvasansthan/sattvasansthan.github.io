@@ -1,0 +1,52 @@
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+    .homeBanner .carousel {
+        height: 40vh;
+    }
+
+    .homeBanner .carousel .carousel-inner,
+    .homeBanner .carousel .carousel-inner .carousel-item,
+    .homeBanner .carousel .carousel-inner .carousel-item>div.position-relative,
+    .homeBanner .carousel .carousel-inner .carousel-item img {
+        height: 100%;
+    }
+
+    .bannerBgOver h1 {
+        font-size: 28px;
+    }
+
+    .bannerBgOver strong {
+        font-size: 16px;
+    }
+
+    .events h2,
+    .updates h2,
+    .hed h2 {
+        font-size: 24px;
+    }
+
+    .img-back {
+        height: 30vh;
+    }
+
+    .footerBlock {
+        border: none;
+    }
+
+    .legalTable {
+        font-size: 14px;
+    }
+
+    .media {
+        padding: 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .footerBlock {
+        border: none;
+    }
+
+    .media {
+        padding: 25px;
+    }
+}

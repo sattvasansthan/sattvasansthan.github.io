@@ -1,475 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>SATTVASANSTHAN</title>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
-    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-      <link href="assets/css/lightbox.css" rel="stylesheet"/>
-    <link href="assets/css/style.css" rel="stylesheet"/>
-  </head>
-  <body ng-app="thankam">
-   
-      
-     
-      
-      
-        
-      
-      
-      <div style="z-index:99999" class="container-fluid">
-                      <div id="sm-menu" class="menu-sd">
-                        <div class="row menu-top-smd">
-                          <i onclick="hideSM()" class="fa fa-times"></i>
-                        </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>SattvaSansthan</title>
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Fontawesome css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- Lightbox css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <!-- Owl Carousel css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Custom css -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/media.css" rel="stylesheet" />
+</head>
 
-                            <ul  style="margin-top: 30px;" class="menu-itmen-sm">
-                                      <li onclick="hideSM()"  id="mm1" onlick="changeSelect(1)" class="active  mom"> <a href="index.html" >
-                                        <i class="fa fa-home"></i>
-                                         Home</a></li>
-
-                                       <li onclick="hideSM()" class="mom" id="mm2" onclick="changeSelect(2)" > <a href="aboutus.html">
-                                       <i class="fa fa-shield"></i>
-                                         About Us</a></li>   
-
-                                     <li  onclick="hideSM()" class="mom" id="mm3" onclick="changeSelect(3)"  > <a href="supportus.html">
-                                         <i class="fa fa-credit-card"></i>
-                                         Support Us</a></li>
-                                     <li onclick="hideSM()" class="mom" id="mm4" onclick="changeSelect(4)"  > <a href="gallery.html">
-                                        <i class="fa fa-photo"></i>
-                                         Gallery</a></li>
-                                     <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="healthcare.html">
-                                         <i class="fa fa-user"></i>
-                                         Healthcare</a></li>
-                                         <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="education.html">
-                                          <i class="fa fa-user"></i>
-                                          Education</a></li>
-                                          <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="rural-development.html">
-                                            <i class="fa fa-user"></i>
-                                            Rural Development</a></li>
-                                     <li onclick="hideSM()" class="mom" id="mm6" onclick="changeSelect(6)" > <a href="media.html">
-                                         <i class="fa fa-newspaper-o"></i>
-                                         Media</a></li>
-                                    <li onclick="hideSM()" class="mom" id="mm7"  onclick="changeSelect(7)"  > <a href="contactus.html">
-                                        <i class=" fa fa-map-marker"></i>
-                                        Contact Us</a></li>
-                                     
-                                </ul>
-
-                            
-                      </div>
-
-                <div class="mobile-head shado-1 visible-xs">
-                        <img style="width:50px;" class="logo" src="assets/images/logo.png">
-                            <h1 style="width:70%">SATTVASANSTHAN</h1>
-                            <b style="margin-left: 4px;">Belive in helping hands</b>
-
-                            <i onclick="showSM()" class="fa fa-navicon smal-menu-ico cp"></i>
-                </div>
-
-                <header class="hidden-xs">
-                    
-                    <nav style="position: absolute;" class="navmenu">
-                        <div style="margin:auto" >
-                            <div class="nav-content shado-1">
-
-                              <div class="container">
-                                <div style="height: 94px; overflow: hidden" class="col-md-4 col-sm-12">
-                                     <img style="width:90px;" class="logo" src="assets/images/logo.png">
-                                    <h1 style="width:70%">SATTVASANSTHAN</h1>
-                                     <b style="margin-left: 4px;">Belive in helping hands</b>
-                                 </div>
-                                  <div style="height: 94px; overflow: hidden"  class="col-md-8 hidden-sm">
-                                        
-                                      
-                                      <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat"><i class="fa fa-inr"></i> Donate Now</button>
-                                      
-                                        <ul class="top-right">
-                                                <li ><i class="fa fa-linkedin-square"></i></li>
-
-                                                 <li><i class="fa fa-google-plus-square"></i></li>
-                                                 <li><i class="fa fa-tumblr-square"></i></li>
-                                                 <li><i class="fa fa-instagram"></i></li>
-                                                 <li class="bll-o"><i class="fa fa-facebook-square"></i></li>
-
-
-                                            </ul>
-
-                                            <div class="exu">
-                                               <i class="fa fa-phone"></i> :  +91 7702054111
-                                                <i style="margin-left: 30px;" class="fa fa-envelope"></i> :  sattvasansthan@gmail.com
-                                            </div>
-                                  </div>
-                             
-                                 
-                                
-                                </div>
-
-
-
-                                <div>
-                                      
-
-                                </div>
-                            </div>
-                            <div class="my-nav shado-1">
-                                <div class="container">
-                                    <ul  class="nav-menu1">
-                                      <li onclick="hideSM()"  id="mm1" onlick="changeSelect(1)" class="active  mom"> <a href="index.html" >
-                                        <i class="fa fa-home"></i>
-                                         Home</a></li>
-
-                                       <li onclick="hideSM()" class="mom" id="mm2" onclick="changeSelect(2)" > <a href="aboutus.html">
-                                       <i class="fa fa-shield"></i>
-                                         About Us</a></li>   
-                                    
-                                     <li  onclick="hideSM()" class="mom" id="mm3" onclick="changeSelect(3)"  > <a href="supportus.html">
-                                         <i class="fa fa-credit-card"></i>
-                                         Support Us</a></li>
-                                     <li onclick="hideSM()" class="mom" id="mm4" onclick="changeSelect(4)"  > <a href="gallery.html">
-                                        <i class="fa fa-photo"></i>
-                                         Gallery</a></li>
-                                         <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="healthcare.html">
-                                          <i class="fa fa-user"></i>
-                                          Healthcare</a></li>
-                                          <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="education.html">
-                                           <i class="fa fa-user"></i>
-                                           Education</a></li>
-                                           <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="rural-development.html">
-                                             <i class="fa fa-user"></i>
-                                             Rural Development</a></li>
-                                      <li onclick="hideSM()" class="mom" id="mm6" onclick="changeSelect(6)" > <a href="media.html">
-                                          <i class="fa fa-newspaper-o"></i>
-                                          Media</a></li>
-                                    <li onclick="hideSM()" class="mom" id="mm7"  onclick="changeSelect(7)"  > <a href="contactus.html">
-                                        <i class=" fa fa-map-marker"></i>
-                                        Contact Us</a></li>
-                                     
-                                </ul>
-                                </div>
-                              
-                            </div>
-                            
-                            
-                        </div>
-                    </nav>
-                    <div class="header-top shado-6">
-                        <div style="z-index: 999999;" class="container">
-                        
-                        <ul class="top-left">
-                            <li class="rit-border"> Donate </li>
-                            <li class="rit-border"> Join Volunteer </li>
-                            <li> 7702054111 </li>
-                        </ul>
-                            
-                        
-                            <ul class="top-right">
-                                <li><i class="fa fa"></i></li>
-                                
-                                 
-                                
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    
-                </header>
-          
-         
-          
-          
-          
-          
-          
+<body ng-app="thankam" onscroll="fixHeader()">
+  <!-- Header content starts here -->
+  <div class="container-fluid p-0">
+    <!-- Mobile header start -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header border-bottom border-dark-subtle">
+        <div class="d-flex align-items-center">
+          <img width="60px" src="assets/images/logo.png">
+          <h1 class="m-0 fs-6 fw-bolder">
+            SattvaSansthan <br />
+            <b class="fw-semibold">Belive in helping hands</b>
+          </h1>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-
-
-
-
-
-  <!---************************** Header content Ends Here ***************-->    
-
-
-
-
-<div  class="home-cont">
-
-
-
-
-<div  class="container-fluid sldddd">
-      <div class=" row hidden-xs">
-          
-          
-          
-<div style="height:200px; margin-top:0px;" class="slider img-back">
-
-    
-    
-
-</div>
-          
-          </div>
-          
-          
-          
-          <div class="container add-tionn">
-          
-         
-          <div class="row">
-                <div class="col-sm-6">
-                  
-                    <img style="width: 100%;" src="assets/images/read.jpg">
-                    
-                    <div class="row hed">
-                      <b>Registration Details</b>
-                      <br>
-                      <b>Registration Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COOP/2021/JODHPUR/201918</b>
-                      <br>
-                      <b>PAN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABOAS1442C</b>
-                      <br>
-                      <b>Darpan ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RJ/2021/0284689</b>
-                      
-                    </div>
-                </div>
-              
-              <div class="col-sm-6 abut">
-                  
-                   <div class="row hed">
-              
-              <h2>About Us</h2>
-              </div>
-                  
-                  <p >
-                    Sattva Sansthan  is a non profit , non political NGO registered, under society registration act, 1958 (RAJASTHAN) at jodhpur. We execute development programs as well as major thrust on advocacy for child rights, women empowerment , good governance and transparency to make the society free from injustice, poverty , corruption and hunger. We pay special attention for the capacity building and awareness of those in vulnerable situation
-Our efforts on health care ensure accessible, affordable, available, and acceptable primary health care services to the most vulnerable and marginalized people in both rural and urban settings . Our NGO organizes regular health check- up camps and has partnered with various other charities.<br>As one of the top-rated NGOs in Rajasthan, we investigate the underlying causes of healthcare issues and offer creative fixes for high-quality health care in India.
-                  </p>
-                  
-                  <b>Our Aim</b>
-
-                  <ul>
-                  <li> To create awareness regarding haelth and healp everyone to achive that. </li>
-
-              <li> To provide educational guidance for the needy.</li>
-
-              <li> To assist students and graduates to avail job opportunities.</li>
-
-              <li> To help and assist rural area for better livelihood.</li>
-
-             <li> To provide guidance for availing financial assistance(loans,  investment, etc ,..) in both public 
-
-              and private sector.</li>
-
-             <li> To guide the public to get medical facilities on the right places on right time.</li>
-
-              
-              </ul>    
-                </div>
-              
-              
-              
-          
-          </div>
-               </div>
-          
-          
-          
-          <!--div class="container">
-            <div class="row hed">
-              
-              <h2>Our Team</h2>
-              </div>
-          
-              <div class="row team">
-                    <div class="col-sm-4">
-                        <b>Mrs. Ramawat</b> 
-                          <small>(President)</small>
-                          <p>The President of Sattvasansthan Trust is Mrs. Ramawat, residing at Jodhpur,She belives in growing together and helping hands. </p>
-                        
-                    </div>
-                  
-                    <div class="col-sm-4">
-                       <b>Sanjay Ramawat </b> 
-                          <small>(Secretary)</small>
-                          <p>The Secretary of Sattvasansthan Trust is 
-                          Mr. Sanjay Ramawat, residing at Jodhpur, He works with different organisations to bring development and handles all activites. 
-                          </p>
-                        
-                    </div>
-
-                    <div class="col-sm-4">
-                       <b>Mr. Singh</b> 
-                          <small>(Volunteer)</small>
-                          <p>Mr Singh helps in managing and development of way to reach out to every needy and he is takes care of all expanditures.</p>
-                        
-                    </div>
-              
-              
-              </div>
-              
-              
-              
-              
-              
-             
-          
-          
-          
-          </div-->
-          
-          
-          
-          
-           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-        </div> 
-      
-      
-      
-      
-      
-      
-          
-          
-          
-          
-          
-          
-          
- </div>        
-
-
-
-  <!---************************** Body content Ends Here ***************-->  
-
-  <footer style="margin-top:25px;">
-    
-    <div class="container foot-cont">
-        <div class="col-sm-4">
-            <b>About Us</b>
-            <p>
-              Sattva Sansthan  is a non profit , non political NGO registered, under society registration act, 1958 (RAJASTHAN) at jodhpur. Your support will go a long way in helping us in our efforts. Any amount of money you give will be appreciated. Donate now to support our mission towards underlying problems of poverty in India.
-            </p>
-        </div>
-         <div class="col-sm-3">
-            <b>Address</b>
-             
-             <p style="font-size:15px;">Sattvasansthan Foundation<br>
-             
-              Plot No 230 <br>
-                 
-              Sector 0 Vivek Vihar Sangharia , <br>
-                 
-              Jodhpur- 342005 <br>
-                 
-                email:sattvasansthan@gmail.com
- <br>
-             
-             </p>
-             
-        </div>
-        
-        <div class="col-sm-5 scmsug">
-            <b style="text-align:center; width:100%; margin-left:30%;">Working Hours</b>
-            <ul class="wh">
-                <li>Monday   <b> 9.30 AM to 6.00PM</b></li>
-                <li>Tuesday  <b> 9.30 AM to 6.00PM</b></li>
-                 <li>Wednesday  <b> 9.30 AM to 6.00PM</b></li>
-                 <li>Thursday  <b> 9.30 AM to 6.00PM</b></li>
-                 <li>Friday  <b> 9.30 AM to 6.00PM</b></li>
-                 <li>Saturday  <b> 9.30 AM to 6.00PM</b></li>
-            </ul>
-        </div>
-        
-        
+      <div class="offcanvas-body">
+        <ul class="list-unstyled fw-bold fs-5">
+          <li class="active mom py-2" id="mm1" onclick="hideSM(); changeSelect(1)">
+            <a href="index.html" class="text-black">
+              Home
+            </a>
+          </li>
+          <li class="mom py-2" id="mm2" onclick="hideSM(); changeSelect(2)">
+            <a href="aboutus.html" class="text-black">
+              Who are we
+            </a>
+          </li>
+          <li class="mom py-2" id="mm3" onclick="hideSM(); changeSelect(3)">
+            <a href="supportus.html" class="text-black">
+              Support Us
+            </a>
+          </li>
+          <li class="mom py-2" id="mm4" onclick="hideSM(); changeSelect(4)">
+            <a href="gallery.html" class="text-black">
+              Gallery
+            </a>
+          </li>
+          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+            <a href="media.html" class="text-black">
+              Media
+            </a>
+          </li>
+          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+            <a href="healthcare.html" class="text-black">
+              Healthcare
+            </a>
+          </li>
+          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+            <a href="education.html" class="text-black">
+              Education
+            </a>
+          </li>
+          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+            <a href="rural-development.html" class="text-black">
+              Rural Development
+            </a>
+          </li>
+          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+            <a href="livelihood.html" class="text-black">
+              Livelihood
+            </a>
+          </li>
+          <li class="mom py-2" id="mm7" onclick="hideSM(); changeSelect(7)">
+            <a href="contactus.html" class="text-black">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
-     <div class=" smarti">
-            <div class="container">
-            <p>All Rights Reserved &copy; Sattvasansthan | Designed By Saurabh
-                
-                <i class="fa fa-twitter fico-s hidden-xs"></i>
-                 <i class="fa fa-pinterest-p fico-s hidden-xs"></i>
-                 <i class="fa fa-google-plus fico-s hidden-xs"></i>
-                 <i class="fa fa-facebook fico-s hidden-xs"></i>
-                    
-                   
-                
-               
-                
-                
-                
-                </p>
-         
-                
-                
-         </div>
+    <div class="mobile-head shado-1 p-2 d-flex justify-content-between align-items-center d-lg-none" id="header">
+      <div class="d-flex align-items-center">
+        <img class="logo" src="assets/images/logo.png">
+        <h1 class="m-0 fs-6 fw-bolder">
+          SattvaSansthan <br />
+          <b class="fw-semibold">Belive in helping hands</b>
+        </h1>
+      </div>
+      <i class="fa fa-navicon p-2 btn btn-dark text-white" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop"></i>
+    </div>
+    <!-- Mobile header end -->
+
+    <!-- Main header start -->
+    <header class="d-none d-lg-block">
+      <nav class="w-100" id="header" style="height: 150px; z-index: 999;">
+        <div id="headerPlaceholder" class="position-absolute top-0 start-0 d-none w-100 h-100" style="z-index: -1;">
         </div>
-    
-    </footer>
-      
-      
-      
-          
-          
-          
-          
-      
+        <div class="nav-content shado-1">
+          <div class="h-100 d-flex">
+            <div class="h-100 col-md-5 col-sm-12">
+              <a href="/index.html" class="h-100 d-flex align-items-center justify-content-center ">
+                <img class="logo" src="assets/images/logo.png">
+                <h1 class="m-0">
+                  <strong>SattvaSansthan</strong> <br />
+                  Belive in helping hands
+                </h1>
+              </a>
+            </div>
+            <div class="top-right px-5 d-flex align-items-center justify-content-evenly gap-3 col-md-7 hidden-sm"
+              style="border-bottom-left-radius: 100px;">
+              <a href="mailto:sattvasansthan@gmail.com" class="text-white fw-semibold" style="font-size: 18px;">
+                <i class="fa fa-envelope"></i>&nbsp;
+                sattvasansthan@gmail.com
+              </a>
+              <a href="tel:+917702054111" class="text-white fw-semibold" style="font-size: 18px;">
+                <i class="fa fa-phone"></i>&nbsp;
+                +91-77020-54111
+              </a>
+              <button type="button" class="headerDonateBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="my-nav shado-1">
+          <div class="h-100 container">
+            <ul class="nav-menu1 d-flex align-items-center justify-content-center gap-5 p-0 m-0">
+              <li class="active mom" id="mm1" onclick="hideSM(); changeSelect(1)">
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="mom" id="mm2" onclick="hideSM(); changeSelect(2)">
+                <a href="aboutus.html">
+                  Who are we
+                </a>
+              </li>
+              <li class="mom" id="mm3" onclick="hideSM(); changeSelect(3)">
+                <a href="supportus.html">
+                  Support Us
+                </a>
+              </li>
+              <li class="position-relative">
+                <a href="#">
+                  Media
+                </a>
+                <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
+                  style="width: max-content;z-index: 999;">
+                  <li class="mom" id="mm4" onclick="hideSM(); changeSelect(4)">
+                    <a href="gallery.html" class="px-5">
+                      Gallery
+                    </a>
+                  </li>
+                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                    <a href="media.html" class="px-5">
+                      Media
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="position-relative">
+                <a href="#">
+                  What we do
+                </a>
+                <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
+                  style="width: max-content;z-index: 999;">
+                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                    <a href="healthcare.html">
+                      Healthcare
+                    </a>
+                  </li>
+                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                    <a href="education.html">
+                      Education
+                    </a>
+                  </li>
+                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                    <a href="rural-development.html">
+                      Rural Development
+                    </a>
+                  </li>
+                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                    <a href="livelihood.html">
+                      Livelihood
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mom" id="mm7" onclick="hideSM(); changeSelect(7)">
+                <a href="contactus.html">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main header end -->
+  </div>
+  <!-- Header content ends here -->
+
+  <!-- Banner content start here -->
+  <div class="pb-4">
+    <div class="position-relative img-back">
+      <div
+        class="w-100 h-100 fs-1 fw-bolder text-capitalize d-flex justify-content-center align-items-center position-absolute top-0 start-0">
+        <span class="border-bottom border-3">
+          who are we
+        </span>
       </div>
-       
-      
-      
-      
-      <div style="z-index: 999999; margin-top: 10%;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div style="width:450px;" class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Donate Now</h4>
-      </div>
-      <div style="padding: 20px;" class="modal-body">
-        
-        <b>UCO Bank, JODHPUR.</b><br>
-        <b>IFSC Code:UCBA0002722.</b><br>
-        <b>Name: Sattvasansthan</b><br>
-        <b>A/C No: 27220110068595.</b><br>
-      </div>
-     
     </div>
   </div>
-</div>
-      
-      
-      
-      
+  <!-- Banner content ends here -->
 
-  </body>
+  <!-- About us content starts here -->
+  <div class="container-fluid px-2 px-lg-3 py-4">
+    <div class="container">
+      <div class="row gy-lg-0 gy-4 align-items-center">
+        <div class="col-lg-6 col-12">
+          <figure class="m-0">
+            <img src="assets/images/read.jpg" alt="about image" class="w-100 rounded-4">
+          </figure>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div>
+            <p class="m-0 pb-2 fw-medium">
+              <strong>Sattva Sansthan</strong> is a non profit, non political NGO, registered under <strong>society
+                registration act 1958</strong>
+              (RAJASTHAN) at jodhpur.
+            </p>
+            <p class="m-0 py-2 fw-medium">
+              We execute development programs as well as major thrust on advocacy for child rights, women empowerment,
+              good governance and transparency to make the society free from injustice, poverty, corruption and hunger.
+            </p>
+            <p class="m-0 py-2 fw-medium">
+              We pay special attention for the capacity building and awareness of those invulnerable situations.
+            </p>
+            <p class="m-0 py-2 fw-medium">
+              Our efforts on health care ensure accessible, affordable, available, and acceptable primary health care
+              services to the most vulnerable and marginalized people in both rural and urban settings.
+            </p>
+            <p class="m-0 py-2 fw-medium">
+              Our NGO organizes regular health check-up camps and has partnered with various other charities.
+            </p>
+            <p class="m-0 pt-2 fw-medium">
+              As one of the <strong>top-rated NGOs in Rajasthan</strong>, we investigate the underlying causes of
+              healthcare issues and offer creative fixes for high-quality health care in India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About us content ends here -->
 
+  <!-- Our Aim content starts here -->
+  <div class="container-fluid px-2 px-lg-3 py-4 bg-body-secondary">
+    <div class="container">
+      <div class="hed text-center">
+        <h2 class="m-0">Our Aim</h2>
+      </div>
+      <div class="row gy-lg-2 gy-3">
+        <div class="col-lg-6 col-12">
+          <div class="fw-medium">
+            <p class="m-0">
+              To create awareness regarding health and help everyone to achive that.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="fw-medium">
+            <p class="m-0">
+              To provide educational guidance for the needy.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="fw-medium">
+            <p class="m-0">
+              To assist students and graduates to avail job opportunities.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="fw-medium">
+            <p class="m-0">
+              To help and assist rural area for better livelihood.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="fw-medium">
+            <p class="m-0">
+              To provide guidance for availing financial assistance(loans, investment, etc ,..) in both public and
+              private
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="fw-medium">
+            <p class="m-0">
+              To guide the public to get medical facilities on the right places on right time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Aim content ends here -->
 
+  <!-- Vision and Mission content starts here -->
+  <div class="container-fluid px-2 px-lg-3 py-4">
+    <div class="container">
+      <div class="hed text-center">
+        <h2 class="m-0">Vision and Mission</h2>
+      </div>
+      <div class="row gy-lg-0 gy-4">
+        <div class="col-md-6 col-12">
+          <div class="card w-100 h-100 rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold">Our Vision</h5>
+              <p class="card-text fw-medium">
+                Our vision is to create a society where every individual has the opportunity to live a healthy and
+                prosperous life. We aim to provide quality healthcare, education, and livelihood opportunities to the
+                underprivileged sections of society.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="card w-100 h-100 rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-semibold">Our Mission</h5>
+              <p class="card-text fw-medium">
+                Our mission is to work towards the upliftment of the underprivileged sections of society by providing
+                them with access to quality healthcare, education, and livelihood opportunities. We aim to create a
+                society where every individual has the opportunity to live a healthy and prosperous life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vision and Mission content end here -->
+
+  <!-- Our Team content starts here -->
+  <div class="container-fluid px-2 px-lg-3 py-4 bg-body-secondary aboutTeam">
+    <div class="container">
+      <div class="hed text-center">
+        <h2 class="m-0">Our Team</h2>
+      </div>
+      <div class="row justify-content-md-center gy-lg-0 gy-4">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card w-100 h-100 rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mrs. Ramawat</h5>
+              <h6 class="card-subtitle mb-2 fw-semibold text-body-secondary">President</h6>
+              <p class="card-text fw-medium">
+                The President of Sattvasansthan Trust is Mrs. Ramawat, residing at Jodhpur,She belives in growing
+                together and helping hands.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card w-100 h-100 rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sanjay Ramawat</h5>
+              <h6 class="card-subtitle mb-2 fw-semibold text-body-secondary">Secretary</h6>
+              <p class="card-text fw-medium">
+                The Secretary of Sattvasansthan Trust is Mr. Sanjay Ramawat, residing at Jodhpur, He works with
+                different organisations to bring development and handles all activites.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="card w-100 h-100 rounded-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mr. Singh</h5>
+              <h6 class="card-subtitle mb-2 fw-semibold text-body-secondary">Volunteer</h6>
+              <p class="card-text fw-medium">
+                Mr Singh helps in managing and development of way to reach out to every needy and he is takes care
+                of
+                all expanditures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Team content ends here -->
+
+  <!-- Legal Status content starts here -->
+  <div class="container-fluid px-2 px-lg-3 py-4">
+    <div class="container">
+      <div class="hed text-center">
+        <h2 class="m-0">Legal Status</h2>
+      </div>
+      <div class="d-flex align-items-lg-start align-items-center gap-4 flex-lg-row flex-column">
+        <figure class="m-0">
+          <img src="assets/images/Legal_status.png" alt="legal status image">
+        </figure>
+        <table class="w-100 border border-black text-center legalTable">
+          <tr>
+            <th colspan="2" class="p-1 fs-5 fw-bold">Registration Details</th>
+          </tr>
+          <tr>
+            <th class="w-50 p-1 border border-black fw-semibold">Registration With</th>
+            <td class="w-50 p-1 border border-black fw-medium">Registrar of Cooperative Societies</td>
+          </tr>
+          <tr>
+            <th class="w-50 p-1 border border-black fw-semibold">NGO Type</th>
+            <td class="w-50 p-1 border border-black fw-medium">Registered Societies (Non-Government)</td>
+          </tr>
+          <tr>
+            <th class="w-50 p-1 border border-black fw-semibold">Registration Number</th>
+            <td class="w-50 p-1 border border-black fw-medium">COOP/2021/JODHPUR/201918</td>
+          </tr>
+          <tr>
+            <th class="w-50 p-1 border border-black fw-semibold">PAN Card</th>
+            <td class="w-50 p-1 border border-black fw-medium">ABOAS1442C</td>
+          </tr>
+          <tr>
+            <th class="w-50 p-1 border border-black fw-semibold">Niti Ayog (Darpan ID)</th>
+            <td class="w-50 p-1 border border-black fw-medium">RJ/2021/0284689</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- Legal Status content ends here -->
+
+  <!-- Footer content starts here -->
+  <footer class="container-fluid px-0 pt-4">
+    <div class="text-white" style="background: #222;">
+      <div class="container py-4">
+        <div class="row justify-content-lg-start justify-content-md-center gy-lg-0 gy-5">
+          <div class="col-lg-4 col-md-6 col-12 footerBlock">
+            <div class="px-3">
+              <figure class="d-flex align-items-center">
+                <img src="assets/images/logo.png" alt="footer logo" width="25%">
+                <p class="m-0 fs-5 fw-bold">
+                  <strong>SattvaSansthan</strong> <br />
+                  <span class="fw-medium">
+                    Belive in helping hands
+                  </span>
+                </p>
+              </figure>
+              <p class="m-0 text-justify fw-medium">
+                Sattva Sansthan is a non profit, non political NGO registered, under society registration act, 1958
+                (RAJASTHAN) at jodhpur. Your support will go a long way in helping us in our efforts. Any amount of
+                money you give will be appreciated. Donate now to support our mission towards underlying problems of
+                poverty in India.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 footerBlock">
+            <div class="px-3">
+              <p class="text-center fs-5 fw-bold text-capitalize">quick links</p>
+              <ul class="list-unstyled d-flex flex-wrap">
+                <li class="w-50 p-1">
+                  <a href="index.html" class="text-white fw-medium">
+                    Home
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="aboutus.html" class="text-white fw-medium">
+                    Who Are We
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="supportus.html" class="text-white fw-medium">
+                    Support Us
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="gallery.html" class="text-white fw-medium">
+                    Gallery
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="media.html" class="text-white fw-medium">
+                    Media
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="healthcare.html" class="text-white fw-medium">
+                    Healthcare
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="education.html" class="text-white fw-medium">
+                    Education
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="rural-development.html" class="text-white fw-medium">
+                    Rural Development
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="livelihood.html" class="text-white fw-medium">
+                    Livelihood
+                  </a>
+                </li>
+                <li class="w-50 p-1">
+                  <a href="contactus.html" class="text-white fw-medium">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="px-3">
+              <p class="text-center fs-5 fw-bold text-capitalize">contact us</p>
+              <ul class="list-unstyled fw-semibold" style="line-height: 30px;">
+                <li class="py-1">
+                  <a href="https://maps.app.goo.gl/QwspYgNqaWNcauQ19" target="_blank"
+                    class="text-white d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-location-arrow fs-5"></i>
+                    <p class="m-0">
+                      Plot No 230, Sector 0, Vivek Vihar Sangharia, <br />
+                      Jodhpur, Rajasthan 342005
+                    </p>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="mailto:sattvasansthan@gmail.com" class="text-white d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-envelope fs-5"></i>
+                    <p class="m-0">
+                      sattvasansthan@gmail.com
+                    </p>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <a href="tel:+917702054111" class="text-white d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-phone fs-5"></i>
+                    <p class="m-0">
+                      +91-77020-54111
+                    </p>
+                  </a>
+                </li>
+                <li class="py-1">
+                  <p class="text-center fs-5 fw-bold text-capitalize">
+                    follow us on
+                  </p>
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="text-center">
+                        <i class="fa-brands fa-twitter fs-4"></i>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="text-center">
+                        <i class="fa-brands fa-pinterest-p fs-4"></i>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="text-center">
+                        <i class="fa-brands fa-google-plus fs-4"></i>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="text-center">
+                        <i class="fa-brands fa-facebook fs-4"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 fw-medium" style="background: #333;">
+        <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
+          <p class="m-0">All Rights Reserved &copy; <strong>Sattvasansthan</strong></p>
+          <p class="m-0">Designed By Nakesh Aswani</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer content ends here -->
+
+  <!-- Donate Modal starts here -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Donate Now</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="w-100 border border-black">
+            <tr>
+              <th colspan="2" class="text-center border border-black p-2">Account Details</th>
+            </tr>
+            <tr>
+              <th class="text-center border border-black p-3">Account Name</th>
+              <td class="text-center border border-black p-3">Sattvasansthan</td>
+            </tr>
+            <tr>
+              <th class="text-center border border-black p-3">Branch Name</th>
+              <td class="text-center border border-black p-3">UCO Bank, JODHPUR</td>
+            </tr>
+            <tr>
+              <th class="text-center border border-black p-3">Account Number</th>
+              <td class="text-center border border-black p-3">27220110068595</td>
+            </tr>
+            <tr>
+              <th class="text-center border border-black p-3">IFSC Code</th>
+              <td class="text-center border border-black p-3">UCBA0002722</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Donate Modal ends here -->
+
+  <!-- Donate Modal Button starts here -->
+  <div class="fixedButton d-block d-lg-none">
+    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Donate Now
+    </button>
+  </div>
+  <!-- Donate Modal Button ends here -->
+</body>
+<!-- Angular js -->
 <script src="assets/js/angular.min.js"></script>
-<script src="assets/js/angular-ui-router.min.js"></script>      
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+<script src="assets/js/angular-ui-router.min.js"></script>
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Bootstrap.bundle.js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Fancybox cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- Owl Carousel js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Custom js -->
 <script src="assets/js/script.js"></script>
+
 </html>
