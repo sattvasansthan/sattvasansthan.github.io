@@ -130,15 +130,18 @@ $('[data-fancybox="updates"]').fancybox({
   protect: true
 });
 
-function fixHeader() {
+const fixHeader = () => {
+  var mobHeader = document.querySelector('#mobHeader');
   var header = document.querySelector('#header');
   var headerPlaceholder = document.querySelector('#headerPlaceholder');
   var sticky = header.clientHeight;
   console.log(sticky)
   if (window.scrollY > sticky) {
+    mobHeader.classList.add("position-fixed", "top-0", "start-0");
     header.classList.add("position-fixed", "top-0", "start-0");
     headerPlaceholder.classList.remove("d-none")
   } else {
+    mobHeader.classList.remove("position-fixed", "top-0", "start-0");
     header.classList.remove("position-fixed", "top-0", "start-0");
     headerPlaceholder.classList.add("d-none")
   }
@@ -163,3 +166,26 @@ document.querySelectorAll('.volFormBlock input, .volFormBlock textarea').forEach
     label.classList.add('active');
   }
 });
+
+const sendMail = (type) => {
+  if (type == "vol") {
+    let params = {
+      volunteerName: document.querySelector('#volunteerName').value,
+      volunteerEmail: document.querySelector('#volunteerEmail').value,
+      volunteerPhone: document.querySelector('#volunteerPhone').value,
+      volunteerMessage: document.querySelector('#volunteerMessage').value
+    };
+  
+    emailjs.send("service_jddimzf", "template_22r26fu", params).then(alert("Email Sent Successfully!"));
+  }
+  else if (type == "contact") {
+    let params = {
+      contactName: document.querySelector('#contactName').value,
+      contactEmail: document.querySelector('#contactEmail').value,
+      contactPhone: document.querySelector('#contactPhone').value,
+      contactMessage: document.querySelector('#contactMessage').value
+    };
+  
+    emailjs.send("service_jddimzf", "template_0on5tlr", params).then(alert("Email Sent Successfully!"));
+  }
+}

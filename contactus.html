@@ -34,7 +34,7 @@
           <img width="60px" src="assets/images/logo.png">
           <h1 class="m-0 fs-6 fw-bolder">
             SattvaSansthan <br />
-            <b class="fw-semibold">Belive in helping hands</b>
+            <span class="fw-semibold fs-6">Hope, Help, and Humanity <br /> for a Better India</span>
           </h1>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -83,7 +83,7 @@
           </li>
           <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
             <a href="livelihood.html" class="text-black">
-              Livelihood
+              Revitalization
             </a>
           </li>
           <li class="mom py-2" id="mm7" onclick="hideSM(); changeSelect(7)">
@@ -94,12 +94,13 @@
         </ul>
       </div>
     </div>
-    <div class="mobile-head shado-1 p-2 d-flex justify-content-between align-items-center d-lg-none" id="header">
+    <div class="mobile-head shado-1 p-2 d-flex justify-content-between align-items-center d-lg-none" id="mobHeader">
       <div class="d-flex align-items-center">
         <img class="logo" src="assets/images/logo.png">
         <h1 class="m-0 fs-6 fw-bolder">
           SattvaSansthan <br />
-          <b class="fw-semibold">Belive in helping hands</b>
+          <span class="fw-semibold fs-6">Hope, Help, and Humanity <br class="d-block d-md-none" /> for a Better
+            India</span>
         </h1>
       </div>
       <i class="fa fa-navicon p-2 btn btn-dark text-white" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
@@ -119,7 +120,7 @@
                 <img class="logo" src="assets/images/logo.png">
                 <h1 class="m-0">
                   <strong>SattvaSansthan</strong> <br />
-                  Belive in helping hands
+                  <span class="fw-bold fs-6">Hope, Help, and Humanity for a Better India</span>
                 </h1>
               </a>
             </div>
@@ -198,7 +199,7 @@
                   </li>
                   <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
                     <a href="livelihood.html">
-                      Livelihood
+                      Revitalization
                     </a>
                   </li>
                 </ul>
@@ -287,7 +288,7 @@
               </div>
               <div class="col-lg-6 col-12 order-lg-1 order-0">
                 <div>
-                  <form class="w-100 px-5 py-3  volForm">
+                  <form class="w-100 px-5 py-3 volForm" onsubmit="this.reset()">
                     <div class="mb-3 text-capitalize text-center fs-5 fw-bold">
                       get in touch with us
                     </div>
@@ -317,7 +318,7 @@
                       </label>
                     </div>
                     <div class="mt-3 volFormBlock position-relative">
-                      <button type="submit" class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
+                      <button type="submit" onclick="sendMail('contact')" class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
                     </div>
                   </form>
                 </div>
@@ -341,16 +342,20 @@
                 <img src="assets/images/logo.png" alt="footer logo" width="25%">
                 <p class="m-0 fs-5 fw-bold">
                   <strong>SattvaSansthan</strong> <br />
-                  <span class="fw-medium">
-                    Belive in helping hands
-                  </span>
+                  <span class="fw-semibold fs-6 lh-sm">Hope, Help, and Humanity <br /> for a Better India</span>
                 </p>
               </figure>
               <p class="m-0 text-justify fw-medium">
-                Sattva Sansthan is a non profit, non political NGO registered, under society registration act, 1958
+                <!-- Sattva Sansthan is a non profit, non political NGO registered, under society registration act, 1958
                 (RAJASTHAN) at jodhpur. Your support will go a long way in helping us in our efforts. Any amount of
                 money you give will be appreciated. Donate now to support our mission towards underlying problems of
-                poverty in India.
+                poverty in India. -->
+                Sattva Sansthan is a registered non-profit and non-political organization under the Society Registration
+                Act, 1958 (Rajasthan), dedicated to addressing the root causes of poverty and empowering vulnerable
+                communities in India. Based in Jodhpur, our mission is to drive sustainable, positive change through
+                targeted programs in education, healthcare, and livelihood support. Your contribution, no matter the
+                amount, is invaluable to us and will directly support our initiatives in creating a brighter future for
+                those in need. Join us in our journey to make a lasting impact
               </p>
             </div>
           </div>
@@ -476,7 +481,7 @@
       <div class="p-3 fw-medium" style="background: #333;">
         <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
           <p class="m-0">All Rights Reserved &copy; <strong>Sattvasansthan</strong></p>
-          <p class="m-0">Designed By Nakesh Aswani</p>
+          <p class="m-0">Designed By CloudPikr</p>
         </div>
       </div>
     </div>
@@ -539,6 +544,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <!-- Owl Carousel js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Emailjs -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init({
+      publicKey: "HbBcyAYWZ7q0IR_Aq",
+    });
+  })();
+</script>
 <!-- Custom js -->
 <script src="assets/js/script.js"></script>
 
