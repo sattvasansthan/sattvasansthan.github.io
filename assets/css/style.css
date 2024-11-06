@@ -129,6 +129,10 @@ a {
     color: #666;
 }
 
+.nav-content h1 span {
+    font-size: 14px;
+}
+
 .round::before {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
