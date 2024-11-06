@@ -24,6 +24,12 @@
 </head>
 
 <body ng-app="thankam" onscroll="fixHeader()">
+  <!-- Fixed Logo starts here -->
+  <div id="goToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- Fixed Logo ends here -->
+
   <!-- Header content starts here -->
   <div class="container-fluid p-0">
     <!-- Mobile header start -->
@@ -41,52 +47,52 @@
       </div>
       <div class="offcanvas-body">
         <ul class="list-unstyled fw-bold fs-5">
-          <li class="active mom py-2" id="mm1" onclick="hideSM(); changeSelect(1)">
+          <li class="py-2">
             <a href="index.html" class="text-black">
               Home
             </a>
           </li>
-          <li class="mom py-2" id="mm2" onclick="hideSM(); changeSelect(2)">
+          <li class="py-2">
             <a href="aboutus.html" class="text-black">
               Who are we
             </a>
           </li>
-          <li class="mom py-2" id="mm3" onclick="hideSM(); changeSelect(3)">
+          <li class="py-2">
             <a href="supportus.html" class="text-black">
               Support Us
             </a>
           </li>
-          <li class="mom py-2" id="mm4" onclick="hideSM(); changeSelect(4)">
+          <li class="py-2">
             <a href="gallery.html" class="text-black">
               Gallery
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="media.html" class="text-black">
               Media
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="healthcare.html" class="text-black">
               Healthcare
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="education.html" class="text-black">
               Education
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="rural-development.html" class="text-black">
               Rural Development
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="livelihood.html" class="text-black">
               Revitalization
             </a>
           </li>
-          <li class="mom py-2" id="mm7" onclick="hideSM(); changeSelect(7)">
+          <li class="py-2">
             <a href="contactus.html" class="text-black">
               Contact Us
             </a>
@@ -99,7 +105,8 @@
         <img class="logo" src="assets/images/logo.png">
         <h1 class="m-0 fs-6 fw-bolder">
           SattvaSansthan <br />
-          <span class="fw-semibold fs-6">Hope, Help, and Humanity <br class="d-block d-md-none" /> for a Better India</span>
+          <span class="fw-semibold fs-6">Hope, Help, and Humanity <br class="d-block d-md-none" /> for a Better
+            India</span>
         </h1>
       </div>
       <i class="fa fa-navicon p-2 btn btn-dark text-white" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
@@ -142,17 +149,17 @@
         <div class="my-nav shado-1">
           <div class="h-100 container">
             <ul class="nav-menu1 d-flex align-items-center justify-content-center gap-5 p-0 m-0">
-              <li class="active mom" id="mm1" onclick="hideSM(); changeSelect(1)">
+              <li>
                 <a href="index.html">
                   Home
                 </a>
               </li>
-              <li class="mom" id="mm2" onclick="hideSM(); changeSelect(2)">
+              <li>
                 <a href="aboutus.html">
                   Who are we
                 </a>
               </li>
-              <li class="mom" id="mm3" onclick="hideSM(); changeSelect(3)">
+              <li>
                 <a href="supportus.html">
                   Support Us
                 </a>
@@ -163,12 +170,12 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm4" onclick="hideSM(); changeSelect(4)">
+                  <li>
                     <a href="gallery.html" class="px-5">
                       Gallery
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="media.html" class="px-5">
                       Media
                     </a>
@@ -181,29 +188,29 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="healthcare.html">
                       Healthcare
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="education.html">
                       Education
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="rural-development.html">
                       Rural Development
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="livelihood.html">
                       Revitalization
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="mom" id="mm7" onclick="hideSM(); changeSelect(7)">
+              <li>
                 <a href="contactus.html">
                   Contact Us
                 </a>
@@ -228,7 +235,7 @@
               class="w-100 h-100 d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle bannerBgOver">
               <div class="text-center text-white">
                 <h1 class="fw-bolder">From Compassion to Action – Making a Difference</h1>
-                <strong class="fs-5 fw-semibold">
+                <strong class="fw-semibold">
                   Empowering our border protectors with the gift of clear vision through dedicated eye camps
                 </strong>
               </div>
@@ -242,7 +249,7 @@
               class="w-100 h-100 d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle bannerBgOver">
               <div class="text-center text-white">
                 <h1 class="fw-bolder">Your Vision, Our Mission – Eye Care for All</h1>
-                <strong class="fs-5 fw-semibold">
+                <strong class="fw-semibold">
                   Ensuring everyone in our communities sees a brighter tomorrow
                 </strong>
               </div>
@@ -256,58 +263,12 @@
               class="w-100 h-100 d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle bannerBgOver">
               <div class="text-center text-white">
                 <h1 class="fw-bolder">Your Support, Their Hope, Our Mission</h1>
-                <strong class="fs-5 fw-semibold">
-                  Bringing learning and hope to the children, empowering them with the education they deserve for a brighter future
+                <strong class="fw-semibold">
+                  Bringing learning and hope to the children, empowering them with the education they deserve for a
+                  brighter future
                 </strong>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container text-center mt-4">
-      <div class="row gy-4">
-        <div class="col-sm-4">
-          <div class="widget-box-inner">
-            <div class="rounded-circle mx-auto mb-4 p-1 position-relative round">
-              <a class="rounded-circle d-flex justify-content-center align-items-center position-relative inner"
-                href="supportus.html">
-                <i class="fa fa-users text-center"></i>
-              </a>
-            </div>
-            <h2 class="text-center text-uppercase mb-3">Join Volunteer</h2>
-            <p class="m-0">
-              Since 2021, <strong>Sattvasansthan</strong> has placed so many volunteers in 10+ programs around the world
-              alongside
-              empowering grassroots community projects.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="widget-box-inner">
-            <div class="rounded-circle mx-auto mb-4 p-1 position-relative round">
-              <a class="rounded-circle d-flex justify-content-center align-items-center position-relative inner"
-                href="./gallery.html">
-                <i class="fa fa-globe text-center"></i>
-              </a>
-            </div>
-            <h2 class="text-center text-uppercase mb-3">Our Campaigns</h2>
-            <p class="m-0">Since the launch of the campaign in 2021, we come a long way in terms of raising awareness of
-              charitable gifts in wills amongst both the UK public and Will making professionals.</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="widget-box-inner">
-            <div class="rounded-circle mx-auto mb-4 p-1 position-relative round">
-              <a class="rounded-circle d-flex justify-content-center align-items-center position-relative inner"
-                href="./aboutus.html">
-                <i class="fa fa-user text-center"></i>
-              </a>
-            </div>
-            <h2 class="text-center text-uppercase mb-3">Biography</h2>
-            <p class="m-0">This Deed of declaration of trust made in 2019 with Mr Sanjay. With the sole aim of social
-              charitable,
-              religious Promotional, educational and cultural activities. </p>
           </div>
         </div>
       </div>
@@ -406,12 +367,12 @@
     </div>
     <div class="row gy-lg-0 gy-md-4 d-none d-md-flex">
       <div class="col-lg-3 col-md-6">
-        <div class="position-relative motiveSection">
+        <div class="w-100 h-100 position-relative motiveSection">
           <a href="healthcare.html" class="text-black">
-            <img src="assets/images/common1.jpeg" class="w-100">
+            <img src="assets/images/common1.jpeg" class="w-100 h-100">
             <div
               class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-              <div class="">
+              <div>
                 <h2>Healthcare</h2>
                 <h4>Why we look for Heathcare</h4>
                 <p>
@@ -425,12 +386,12 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="position-relative motiveSection">
+        <div class="w-100 h-100 position-relative motiveSection">
           <a href="education.html" class="text-black">
-            <img src="assets/images/education1.jpeg" class="w-100">
+            <img src="assets/images/education1.jpeg" class="w-100 h-100">
             <div
               class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-              <div class="">
+              <div>
                 <h2>Education</h2>
                 <h4>Why we look for education</h4>
                 <p>
@@ -447,14 +408,14 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="position-relative motiveSection">
+        <div class="w-100 h-100 position-relative motiveSection">
           <a href="livelihood.html" class="text-black">
-            <img src="assets/images/common2.jpg" class="w-100">
+            <img src="assets/images/common2.jpg" class="w-100 h-100">
             <div
               class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-              <div class="">
-                <h2>Livelihood</h2>
-                <h4>Why we look for Livelihood</h4>
+              <div>
+                <h2>Revitalization</h2>
+                <h4>Why we look for Revitalization</h4>
                 <p>
                   The youth comprises over one-third of the Indian population which in turn constitutes a major part
                   of
@@ -469,12 +430,12 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="position-relative motiveSection">
+        <div class="w-100 h-100 position-relative motiveSection">
           <a href="rural-development.html" class="text-black">
-            <img src="assets/images/education2.jpeg" class="w-100">
+            <img src="assets/images/rural6.jpg" class="w-100 h-100">
             <div
               class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-              <div class="">
+              <div>
                 <h2>Rural Development</h2>
                 <h4>Why we look for rural Development</h4>
                 <p>
@@ -491,12 +452,12 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide d-flex d-md-none" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="position-relative motiveSection">
+          <div class="w-100 h-100 position-relative motiveSection">
             <a href="healthcare.html" class="text-black">
-              <img src="assets/images/common1.jpeg" class="w-100">
+              <img src="assets/images/common1.jpeg" class="w-100 h-100">
               <div
                 class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-                <div class="">
+                <div>
                   <h2>Healthcare</h2>
                   <h4>Why we look for Heathcare</h4>
                   <p>
@@ -510,12 +471,12 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="position-relative motiveSection">
+          <div class="w-100 h-100 position-relative motiveSection">
             <a href="education.html" class="text-black">
-              <img src="assets/images/education1.jpeg" class="w-100">
+              <img src="assets/images/education1.jpeg" class="w-100 h-100">
               <div
                 class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-                <div class="">
+                <div>
                   <h2>Education</h2>
                   <h4>Why we look for education</h4>
                   <p>
@@ -532,14 +493,14 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="position-relative motiveSection">
+          <div class="w-100 h-100 position-relative motiveSection">
             <a href="livelihood.html" class="text-black">
-              <img src="assets/images/common2.jpg" class="w-100">
+              <img src="assets/images/common2.jpg" class="w-100 h-100">
               <div
                 class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-                <div class="">
-                  <h2>Livelihood</h2>
-                  <h4>Why we look for Livelihood</h4>
+                <div>
+                  <h2>Revitalization</h2>
+                  <h4>Why we look for Revitalization</h4>
                   <p>
                     The youth comprises over one-third of the Indian population which in turn constitutes a major part
                     of
@@ -554,12 +515,12 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="position-relative motiveSection">
+          <div class="w-100 h-100 position-relative motiveSection">
             <a href="rural-development.html" class="text-black">
-              <img src="assets/images/education2.jpeg" class="w-100">
+              <img src="assets/images/rural6.jpg" class="w-100 h-100">
               <div
                 class="w-100 h-100 p-3 bg-white bg-opacity-50 text-center d-flex align-items-center position-absolute top-0 start-0 motiveOver">
-                <div class="">
+                <div>
                   <h2>Rural Development</h2>
                   <h4>Why we look for rural Development</h4>
                   <p>
@@ -586,8 +547,7 @@
       <div class="owl-carousel owl-theme" id="updatesSlider">
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health1.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health1.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health1.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -598,8 +558,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health2.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health2.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health2.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -610,8 +569,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health3.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health3.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health3.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -622,8 +580,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health4.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health4.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health4.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -634,8 +591,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health5.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health5.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health5.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -646,8 +602,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health6.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health6.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health6.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -658,8 +613,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health7.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health7.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health7.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -670,8 +624,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health8.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health8.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health8.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -682,8 +635,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health9.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health9.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health9.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -694,8 +646,7 @@
         </div>
         <div class="item">
           <div class="updatesBlock">
-            <a href="assets/images/health10.jpg" data-fancybox="updates"
-              class="h-100 text-black position-relative">
+            <a href="assets/images/health10.jpg" data-fancybox="updates" class="h-100 text-black position-relative">
               <img src="assets/images/health10.jpg" alt="image-1" class="h-100" />
               <div
                 class="w-100 h-100 bg-white bg-opacity-50 d-flex align-items-center justify-content-center position-absolute top-0 start-0 updatesOver">
@@ -728,7 +679,12 @@
                 (RAJASTHAN) at jodhpur. Your support will go a long way in helping us in our efforts. Any amount of
                 money you give will be appreciated. Donate now to support our mission towards underlying problems of
                 poverty in India. -->
-                Sattva Sansthan is a registered non-profit and non-political organization under the Society Registration Act, 1958 (Rajasthan), dedicated to addressing the root causes of poverty and empowering vulnerable communities in India. Based in Jodhpur, our mission is to drive sustainable, positive change through targeted programs in education, healthcare, and livelihood support. Your contribution, no matter the amount, is invaluable to us and will directly support our initiatives in creating a brighter future for those in need. Join us in our journey to make a lasting impact
+                Sattva Sansthan is a registered non-profit and non-political organization under the Society Registration
+                Act, 1958 (Rajasthan), dedicated to addressing the root causes of poverty and empowering vulnerable
+                communities in India. Based in Jodhpur, our mission is to drive sustainable, positive change through
+                targeted programs in education, healthcare, and livelihood support. Your contribution, no matter the
+                amount, is invaluable to us and will directly support our initiatives in creating a brighter future for
+                those in need. Join us in our journey to make a lasting impact
               </p>
             </div>
           </div>
@@ -778,7 +734,7 @@
                 </li>
                 <li class="w-50 p-1">
                   <a href="livelihood.html" class="text-white fw-medium">
-                    Livelihood
+                    Revitalization
                   </a>
                 </li>
                 <li class="w-50 p-1">

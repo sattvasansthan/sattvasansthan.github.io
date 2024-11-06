@@ -46,6 +46,25 @@ a {
     /* vendor prefix end */
 }
 
+#goToTop {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #e59625;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: -100%;
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .fixedButton {
     position: fixed;
     top: 50%;
@@ -566,6 +585,36 @@ a {
     -o-background-size: 100%;
     -ms-background-size: 100%;
     /* vendor prefix end */
+}
+
+.aboutTeam h3 {
+    width: max-content;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+.aboutTeam h3::before, .aboutTeam h3::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    background: #e59625;
+}
+
+.aboutTeam h3::after {
+    left: initial;
+    right: -30px;
+}
+
+.vmaIcon {
+    transition: 0.8s;
+}
+
+.aboutTeam .card:hover .vmaIcon {
+    transform: rotate(360deg);
 }
 
 .aboutTeam .card {

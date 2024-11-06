@@ -55,19 +55,13 @@ thankam.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProv
     })
 }])
 
-function changeSelect(i) {
-  $(".mom").removeClass('sel' + i);
-  $("#mm" + i).addClass('sel' + i);
-}
-
-function showSM() {
-  $("#sm-menu").show(500);
-}
-
-
-function hideSM() {
-  $("#sm-menu").hide();
-}
+const goToTop = document.querySelector('#goToTop');
+goToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 
 $(document).ready(function () {
   var owl = $("#updatesSlider");
@@ -131,19 +125,21 @@ $('[data-fancybox="updates"]').fancybox({
 });
 
 const fixHeader = () => {
-  var mobHeader = document.querySelector('#mobHeader');
-  var header = document.querySelector('#header');
-  var headerPlaceholder = document.querySelector('#headerPlaceholder');
-  var sticky = header.clientHeight;
-  console.log(sticky)
+  const goToTop = document.querySelector('#goToTop');
+  const mobHeader = document.querySelector('#mobHeader');
+  const header = document.querySelector('#header');
+  const headerPlaceholder = document.querySelector('#headerPlaceholder');
+  const sticky = header.clientHeight;
   if (window.scrollY > sticky) {
     mobHeader.classList.add("position-fixed", "top-0", "start-0");
     header.classList.add("position-fixed", "top-0", "start-0");
     headerPlaceholder.classList.remove("d-none")
+    goToTop.style.right = "30px";
   } else {
     mobHeader.classList.remove("position-fixed", "top-0", "start-0");
     header.classList.remove("position-fixed", "top-0", "start-0");
     headerPlaceholder.classList.add("d-none")
+    goToTop.style.right = "-100%";
   }
 }
 

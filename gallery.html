@@ -24,6 +24,12 @@
 </head>
 
 <body ng-app="thankam" onscroll="fixHeader()">
+  <!-- Fixed Logo starts here -->
+  <div id="goToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- Fixed Logo ends here -->
+
   <!-- Header content starts here -->
   <div class="container-fluid p-0">
     <!-- Mobile header start -->
@@ -41,52 +47,52 @@
       </div>
       <div class="offcanvas-body">
         <ul class="list-unstyled fw-bold fs-5">
-          <li class="active mom py-2" id="mm1" onclick="hideSM(); changeSelect(1)">
+          <li class="py-2">
             <a href="index.html" class="text-black">
               Home
             </a>
           </li>
-          <li class="mom py-2" id="mm2" onclick="hideSM(); changeSelect(2)">
+          <li class="py-2">
             <a href="aboutus.html" class="text-black">
               Who are we
             </a>
           </li>
-          <li class="mom py-2" id="mm3" onclick="hideSM(); changeSelect(3)">
+          <li class="py-2">
             <a href="supportus.html" class="text-black">
               Support Us
             </a>
           </li>
-          <li class="mom py-2" id="mm4" onclick="hideSM(); changeSelect(4)">
+          <li class="py-2">
             <a href="gallery.html" class="text-black">
               Gallery
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="media.html" class="text-black">
               Media
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="healthcare.html" class="text-black">
               Healthcare
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="education.html" class="text-black">
               Education
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="rural-development.html" class="text-black">
               Rural Development
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="livelihood.html" class="text-black">
               Revitalization
             </a>
           </li>
-          <li class="mom py-2" id="mm7" onclick="hideSM(); changeSelect(7)">
+          <li class="py-2">
             <a href="contactus.html" class="text-black">
               Contact Us
             </a>
@@ -143,17 +149,17 @@
         <div class="my-nav shado-1">
           <div class="h-100 container">
             <ul class="nav-menu1 d-flex align-items-center justify-content-center gap-5 p-0 m-0">
-              <li class="active mom" id="mm1" onclick="hideSM(); changeSelect(1)">
+              <li>
                 <a href="index.html">
                   Home
                 </a>
               </li>
-              <li class="mom" id="mm2" onclick="hideSM(); changeSelect(2)">
+              <li>
                 <a href="aboutus.html">
                   Who are we
                 </a>
               </li>
-              <li class="mom" id="mm3" onclick="hideSM(); changeSelect(3)">
+              <li>
                 <a href="supportus.html">
                   Support Us
                 </a>
@@ -164,12 +170,12 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm4" onclick="hideSM(); changeSelect(4)">
+                  <li>
                     <a href="gallery.html" class="px-5">
                       Gallery
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="media.html" class="px-5">
                       Media
                     </a>
@@ -182,29 +188,29 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="healthcare.html">
                       Healthcare
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="education.html">
                       Education
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="rural-development.html">
                       Rural Development
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="livelihood.html">
                       Revitalization
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="mom" id="mm7" onclick="hideSM(); changeSelect(7)">
+              <li>
                 <a href="contactus.html">
                   Contact Us
                 </a>
@@ -235,7 +241,7 @@
   <div class="container-fluid p-0 py-4">
     <div class="pb-4">
       <div class="hed text-center">
-        <h2 class="m-0">Camp1 - Vision Camp for BSF personnel</h2>
+        <h2 class="m-0">Vision Camp for BSF personnel</h2>
       </div>
       <div class="owl-carousel owl-theme px-5 position-relative" id="gallerySlider1">
         <div class="item">
@@ -290,7 +296,7 @@
     </div>
     <div class="py-4 bg-body-secondary">
       <div class="hed text-center">
-        <h2 class="m-0">Camp2 - Vision Camp at Tribal area of Sirohi , Rajasthan</h2>
+        <h2 class="m-0">Vision Camp at Tribal area of Sirohi , Rajasthan</h2>
       </div>
       <div class="owl-carousel owl-theme px-5 position-relative" id="gallerySlider2">
         <div class="item">
@@ -645,7 +651,7 @@
     </div>
     <div class="pt-4">
       <div class="hed text-center">
-        <h2 class="m-0">Camp3 - Vision/Cataract Surgery Camp at border villages , Barmer , Rajasthan</h2>
+        <h2 class="m-0">Vision/Cataract Surgery Camp at border villages , Barmer , Rajasthan</h2>
       </div>
       <div class="owl-carousel owl-theme px-5 position-relative" id="gallerySlider3">
         <div class="item">
@@ -843,7 +849,7 @@
                 </li>
                 <li class="w-50 p-1">
                   <a href="livelihood.html" class="text-white fw-medium">
-                    Livelihood
+                    Revitalization
                   </a>
                 </li>
                 <li class="w-50 p-1">

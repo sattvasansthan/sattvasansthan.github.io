@@ -24,6 +24,12 @@
 </head>
 
 <body ng-app="thankam" onscroll="fixHeader()">
+  <!-- Fixed Logo starts here -->
+  <div id="goToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- Fixed Logo ends here -->
+
   <!-- Header content starts here -->
   <div class="container-fluid p-0">
     <!-- Mobile header start -->
@@ -41,52 +47,52 @@
       </div>
       <div class="offcanvas-body">
         <ul class="list-unstyled fw-bold fs-5">
-          <li class="active mom py-2" id="mm1" onclick="hideSM(); changeSelect(1)">
+          <li class="py-2">
             <a href="index.html" class="text-black">
               Home
             </a>
           </li>
-          <li class="mom py-2" id="mm2" onclick="hideSM(); changeSelect(2)">
+          <li class="py-2">
             <a href="aboutus.html" class="text-black">
               Who are we
             </a>
           </li>
-          <li class="mom py-2" id="mm3" onclick="hideSM(); changeSelect(3)">
+          <li class="py-2">
             <a href="supportus.html" class="text-black">
               Support Us
             </a>
           </li>
-          <li class="mom py-2" id="mm4" onclick="hideSM(); changeSelect(4)">
+          <li class="py-2">
             <a href="gallery.html" class="text-black">
               Gallery
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="media.html" class="text-black">
               Media
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="healthcare.html" class="text-black">
               Healthcare
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="education.html" class="text-black">
               Education
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="rural-development.html" class="text-black">
               Rural Development
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="livelihood.html" class="text-black">
               Revitalization
             </a>
           </li>
-          <li class="mom py-2" id="mm7" onclick="hideSM(); changeSelect(7)">
+          <li class="py-2">
             <a href="contactus.html" class="text-black">
               Contact Us
             </a>
@@ -143,17 +149,17 @@
         <div class="my-nav shado-1">
           <div class="h-100 container">
             <ul class="nav-menu1 d-flex align-items-center justify-content-center gap-5 p-0 m-0">
-              <li class="active mom" id="mm1" onclick="hideSM(); changeSelect(1)">
+              <li>
                 <a href="index.html">
                   Home
                 </a>
               </li>
-              <li class="mom" id="mm2" onclick="hideSM(); changeSelect(2)">
+              <li>
                 <a href="aboutus.html">
                   Who are we
                 </a>
               </li>
-              <li class="mom" id="mm3" onclick="hideSM(); changeSelect(3)">
+              <li>
                 <a href="supportus.html">
                   Support Us
                 </a>
@@ -164,12 +170,12 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm4" onclick="hideSM(); changeSelect(4)">
+                  <li>
                     <a href="gallery.html" class="px-5">
                       Gallery
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="media.html" class="px-5">
                       Media
                     </a>
@@ -182,29 +188,29 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="healthcare.html">
                       Healthcare
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="education.html">
                       Education
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="rural-development.html">
                       Rural Development
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="livelihood.html">
                       Revitalization
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="mom" id="mm7" onclick="hideSM(); changeSelect(7)">
+              <li>
                 <a href="contactus.html">
                   Contact Us
                 </a>
@@ -219,7 +225,7 @@
   <!-- Header content ends here -->
 
   <!-- Banner content start here -->
-  <div class="pb-4">
+  <div class="pb-5 position-relative">
     <div class="position-relative img-back">
       <div
         class="w-100 h-100 fs-1 fw-bolder text-capitalize d-flex justify-content-center align-items-center position-absolute top-0 start-0">
@@ -228,102 +234,95 @@
         </span>
       </div>
     </div>
+    <div class="container position-absolute start-50 translate-middle">
+      <div>
+        <div class="row justify-content-lg-start justify-content-md-center gy-lg-0 gy-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="w-100 h-100 p-4 rounded-5 contactUsBlock">
+              <a href="https://maps.app.goo.gl/QwspYgNqaWNcauQ19"
+                class="w-100 h-100 text-center text-white fw-medium d-flex flex-column justify-content-center align-items-center gap-3">
+                <i class="fa fa-location-dot fs-2 d-block"></i>
+                <span class="fs-6">
+                  Plot No 230, Sector 0, Vivek Vihar Sangharia,
+                  Jodhpur, Rajasthan 342005
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="w-100 h-100 p-4 rounded-5 contactUsBlock">
+              <a href="mailto:sattvasansthan@gmail.com"
+                class="w-100 h-100 text-center text-white fw-medium d-flex flex-column justify-content-center align-items-center gap-3">
+                <i class="fa fa-envelope fs-2 d-block"></i>
+                <span class="fs-6">
+                  sattvasansthan@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="w-100 h-100 p-4 rounded-5 contactUsBlock">
+              <a href="tel:+917702054111"
+                class="w-100 h-100 text-center text-white fw-medium d-flex flex-column justify-content-center align-items-center gap-3">
+                <i class="fa fa-phone fs-2 d-block"></i>
+                <span class="fs-6">
+                  +91-77020-54111
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Banner content ends here -->
 
   <!-- Contact us content starts here -->
-  <div class="container-fluid px-2 px-lg-3 py-4 contactUs">
+  <div class="container-fluid px-2 px-lg-3 pt-5 pb-4 contactUs">
     <div class="container">
-      <div class="row gy-5">
-        <div class="col-12">
-          <div>
-            <div class="row justify-content-lg-start justify-content-md-center gy-lg-0 gy-4">
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="w-100 h-100 p-4 rounded-5 contactUsBlock">
-                  <a href="https://maps.app.goo.gl/QwspYgNqaWNcauQ19"
-                    class="w-100 h-100 text-center text-white fw-medium d-flex flex-column justify-content-center align-items-center gap-3">
-                    <i class="fa fa-location-dot fs-2 d-block"></i>
-                    <span class="fs-6">
-                      Plot No 230, Sector 0, Vivek Vihar Sangharia,
-                      Jodhpur, Rajasthan 342005
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="w-100 h-100 p-4 rounded-5 contactUsBlock">
-                  <a href="mailto:sattvasansthan@gmail.com"
-                    class="w-100 h-100 text-center text-white fw-medium d-flex flex-column justify-content-center align-items-center gap-3">
-                    <i class="fa fa-envelope fs-2 d-block"></i>
-                    <span class="fs-6">
-                      sattvasansthan@gmail.com
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="w-100 h-100 p-4 rounded-5 contactUsBlock">
-                  <a href="tel:+917702054111"
-                    class="w-100 h-100 text-center text-white fw-medium d-flex flex-column justify-content-center align-items-center gap-3">
-                    <i class="fa fa-phone fs-2 d-block"></i>
-                    <span class="fs-6">
-                      +91-77020-54111
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
+      <div class="row g-0 rounded-4 shadow">
+        <div class="col-lg-6 col-12 order-lg-0 order-1">
+          <div class="h-100">
+            <img src="assets/images/contactUs.jpg" alt="contact image" width="100%" height="100%"
+              class="rounded-start-4">
           </div>
         </div>
-        <div class="col-12">
-          <div>
-            <div class="row g-0 rounded-4 shadow">
-              <div class="col-lg-6 col-12 order-lg-0 order-1">
-                <div>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.9308173284144!2d73.02576909999999!3d26.1989287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b0b24eaa96b%3A0xd25440ac41129952!2sSattvasansthan!5e0!3m2!1sen!2sin!4v1729619936359!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+        <div class="col-lg-6 col-12 order-lg-1 order-0">
+          <div class="h-100">
+            <form class="w-100 px-5 py-4 volForm" onsubmit="this.reset()">
+              <div class="mb-3 text-capitalize text-center fs-5 fw-bold">
+                get in touch with us
               </div>
-              <div class="col-lg-6 col-12 order-lg-1 order-0">
-                <div>
-                  <form class="w-100 px-5 py-3 volForm" onsubmit="this.reset()">
-                    <div class="mb-3 text-capitalize text-center fs-5 fw-bold">
-                      get in touch with us
-                    </div>
-                    <div class="my-3 volFormBlock position-relative">
-                      <input type="text" id="contactName" class="w-100 p-1" name="contactName" placeholder=" ">
-                      <label for="contactName" class="text-capitalize d-flex align-items-center gap-2">
-                        full name
-                      </label>
-                    </div>
-                    <div class="my-3 volFormBlock position-relative">
-                      <input type="text" id="contactEmail" class="w-100 p-1" name="contactEmail" placeholder=" ">
-                      <label for="contactEmail" class="text-capitalize d-flex align-items-center gap-2">
-                        email address
-                      </label>
-                    </div>
-                    <div class="my-3 volFormBlock position-relative">
-                      <input type="text" id="contactPhone" class="w-100 p-1" name="contactPhone" placeholder=" ">
-                      <label for="contactPhone" class="text-capitalize d-flex align-items-center gap-2">
-                        phone number
-                      </label>
-                    </div>
-                    <div class="my-3 volFormBlock position-relative">
-                      <textarea id="contactMessage" class="w-100 p-1" style="height: 150px; resize: none;"
-                        name="contactMessage" placeholder=" "></textarea>
-                      <label for="contactMessage" class="text-capitalize d-flex align-items-center gap-2">
-                        message
-                      </label>
-                    </div>
-                    <div class="mt-3 volFormBlock position-relative">
-                      <button type="submit" onclick="sendMail('contact')" class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
-                    </div>
-                  </form>
-                </div>
+              <div class="my-3 volFormBlock position-relative">
+                <input type="text" id="contactName" class="w-100 p-1" name="contactName" placeholder=" ">
+                <label for="contactName" class="text-capitalize d-flex align-items-center gap-2">
+                  full name
+                </label>
               </div>
-            </div>
+              <div class="my-3 volFormBlock position-relative">
+                <input type="text" id="contactEmail" class="w-100 p-1" name="contactEmail" placeholder=" ">
+                <label for="contactEmail" class="text-capitalize d-flex align-items-center gap-2">
+                  email address
+                </label>
+              </div>
+              <div class="my-3 volFormBlock position-relative">
+                <input type="text" id="contactPhone" class="w-100 p-1" name="contactPhone" placeholder=" ">
+                <label for="contactPhone" class="text-capitalize d-flex align-items-center gap-2">
+                  phone number
+                </label>
+              </div>
+              <div class="my-3 volFormBlock position-relative">
+                <textarea id="contactMessage" class="w-100 p-1" style="height: 150px; resize: none;"
+                  name="contactMessage" placeholder=" "></textarea>
+                <label for="contactMessage" class="text-capitalize d-flex align-items-center gap-2">
+                  message
+                </label>
+              </div>
+              <div class="mt-3 volFormBlock position-relative">
+                <button type="submit" onclick="sendMail('contact')"
+                  class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -331,8 +330,17 @@
   </div>
   <!-- Contact us content ends here -->
 
+  <!-- Map starts here -->
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.9308173284144!2d73.02576909999999!3d26.1989287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b0b24eaa96b%3A0xd25440ac41129952!2sSattvasansthan!5e0!3m2!1sen!2sin!4v1729619936359!5m2!1sen!2sin"
+      width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- Map ends here -->
+
   <!-- Footer content starts here -->
-  <footer class="container-fluid px-0 pt-4">
+  <footer class="container-fluid px-0">
     <div class="text-white" style="background: #222;">
       <div class="container py-4">
         <div class="row justify-content-lg-start justify-content-md-center gy-lg-0 gy-5">
@@ -405,7 +413,7 @@
                 </li>
                 <li class="w-50 p-1">
                   <a href="livelihood.html" class="text-white fw-medium">
-                    Livelihood
+                    Revitalization
                   </a>
                 </li>
                 <li class="w-50 p-1">

@@ -24,6 +24,12 @@
 </head>
 
 <body ng-app="thankam" onscroll="fixHeader()">
+  <!-- Fixed Logo starts here -->
+  <div id="goToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+  <!-- Fixed Logo ends here -->
+
   <!-- Header content starts here -->
   <div class="container-fluid p-0">
     <!-- Mobile header start -->
@@ -41,52 +47,52 @@
       </div>
       <div class="offcanvas-body">
         <ul class="list-unstyled fw-bold fs-5">
-          <li class="active mom py-2" id="mm1" onclick="hideSM(); changeSelect(1)">
+          <li class="py-2">
             <a href="index.html" class="text-black">
               Home
             </a>
           </li>
-          <li class="mom py-2" id="mm2" onclick="hideSM(); changeSelect(2)">
+          <li class="py-2">
             <a href="aboutus.html" class="text-black">
               Who are we
             </a>
           </li>
-          <li class="mom py-2" id="mm3" onclick="hideSM(); changeSelect(3)">
+          <li class="py-2">
             <a href="supportus.html" class="text-black">
               Support Us
             </a>
           </li>
-          <li class="mom py-2" id="mm4" onclick="hideSM(); changeSelect(4)">
+          <li class="py-2">
             <a href="gallery.html" class="text-black">
               Gallery
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="media.html" class="text-black">
               Media
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="healthcare.html" class="text-black">
               Healthcare
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="education.html" class="text-black">
               Education
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="rural-development.html" class="text-black">
               Rural Development
             </a>
           </li>
-          <li class="mom py-2" id="mm5" onclick="hideSM(); changeSelect(5)">
+          <li class="py-2">
             <a href="livelihood.html" class="text-black">
               Revitalization
             </a>
           </li>
-          <li class="mom py-2" id="mm7" onclick="hideSM(); changeSelect(7)">
+          <li class="py-2">
             <a href="contactus.html" class="text-black">
               Contact Us
             </a>
@@ -143,17 +149,17 @@
         <div class="my-nav shado-1">
           <div class="h-100 container">
             <ul class="nav-menu1 d-flex align-items-center justify-content-center gap-5 p-0 m-0">
-              <li class="active mom" id="mm1" onclick="hideSM(); changeSelect(1)">
+              <li>
                 <a href="index.html">
                   Home
                 </a>
               </li>
-              <li class="mom" id="mm2" onclick="hideSM(); changeSelect(2)">
+              <li>
                 <a href="aboutus.html">
                   Who are we
                 </a>
               </li>
-              <li class="mom" id="mm3" onclick="hideSM(); changeSelect(3)">
+              <li>
                 <a href="supportus.html">
                   Support Us
                 </a>
@@ -164,12 +170,12 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm4" onclick="hideSM(); changeSelect(4)">
+                  <li>
                     <a href="gallery.html" class="px-5">
                       Gallery
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="media.html" class="px-5">
                       Media
                     </a>
@@ -182,29 +188,29 @@
                 </a>
                 <ul class="d-none p-0 m-0 position-absolute top-100 start-0 subMenu"
                   style="width: max-content;z-index: 999;">
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="healthcare.html">
                       Healthcare
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="education.html">
                       Education
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="rural-development.html">
                       Rural Development
                     </a>
                   </li>
-                  <li class="mom" id="mm5" onclick="hideSM(); changeSelect(5)">
+                  <li>
                     <a href="livelihood.html">
                       Revitalization
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="mom" id="mm7" onclick="hideSM(); changeSelect(7)">
+              <li>
                 <a href="contactus.html">
                   Contact Us
                 </a>
@@ -271,61 +277,6 @@
   </div>
   <!-- About us content ends here -->
 
-  <!-- Our Aim content starts here -->
-  <!-- <div class="container-fluid px-2 px-lg-3 py-4 bg-body-secondary">
-    <div class="container">
-      <div class="hed text-center">
-        <h2 class="m-0">Our Aim</h2>
-      </div>
-      <div class="row gy-lg-2 gy-3">
-        <div class="col-lg-6 col-12">
-          <div class="fw-medium">
-            <p class="m-0">
-              To create awareness regarding health and help everyone to achive that.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="fw-medium">
-            <p class="m-0">
-              To provide educational guidance for the needy.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="fw-medium">
-            <p class="m-0">
-              To assist students and graduates to avail job opportunities.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="fw-medium">
-            <p class="m-0">
-              To help and assist rural area for better livelihood.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="fw-medium">
-            <p class="m-0">
-              To provide guidance for availing financial assistance(loans, investment, etc ,..) in both public and
-              private
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12">
-          <div class="fw-medium">
-            <p class="m-0">
-              To guide the public to get medical facilities on the right places on right time.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- Our Aim content ends here -->
-
   <!-- Vision, Mission and Aim content starts here -->
   <div class="container-fluid px-2 px-lg-3 py-4 bg-body-secondary aboutTeam">
     <div class="container">
@@ -333,47 +284,73 @@
         <h2 class="m-0">Vision, Mission and Aim</h2>
       </div>
       <div class="row justify-content-center gy-4">
-        <div class="col-md-6 col-12">
-          <div class="card w-100 h-100 rounded-4">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">Our Vision</h5>
-              <p class="card-text text-justify fw-medium">
-                Our vision at Sattva Sansthan is to create an inclusive and empowered society where every individual has
-                access to basic healthcare, quality education, and sustainable livelihood opportunities. We are
-                dedicated to improving lives through specialized initiatives, such as our eye care programs, which
-                provide essential vision care and awareness for those in need. By addressing fundamental challenges, we
-                envision a future where underserved communities thrive with health, knowledge, and the skills needed to
-                uplift themselves and contribute positively to society.
-              </p>
+        <div class="col-md-10 col-12">
+          <div>
+            <h3 class="mb-3 text-center fw-medium position-relative">Our Vision</h3>
+            <div class="card w-100 h-100 rounded-4 position-relative">
+              <div class="card-body d-flex align-items-center gap-4">
+                <figure class="p-3 border border-5 border-danger rounded-circle m-0 bg-danger bg-opacity-75 vmaIcon">
+                  <img src="assets/images/vision.webp" alt="vision" width="70px">
+                </figure>
+                <div>
+                  <p class="card-text text-justify fw-medium">
+                    Our vision at Sattva Sansthan is to create an inclusive and empowered society where every individual
+                    has
+                    access to basic healthcare, quality education, and sustainable livelihood opportunities. We are
+                    dedicated to improving lives through specialized initiatives, such as our eye care programs, which
+                    provide essential vision care and awareness for those in need. By addressing fundamental challenges,
+                    we
+                    envision a future where underserved communities thrive with health, knowledge, and the skills needed
+                    to
+                    uplift themselves and contribute positively to society.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-12">
-          <div class="card w-100 h-100 rounded-4">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">Our Mission</h5>
-              <p class="card-text text-justify fw-medium">
-                Our mission at Sattva Sansthan is to uplift vulnerable communities by providing essential support in
-                healthcare, education, and sustainable livelihoods. We are dedicated to fostering positive change
-                through programs that address immediate needs and empower individuals with knowledge and skills for
-                long-term growth. Through our initiatives, such as vision camps, educational workshops, and
-                skill-building programs, we aim to create self-sufficient communities and bridge gaps in access to
-                resources, ultimately contributing to a more equitable and inclusive society.
-              </p>
+        <div class="col-md-10 col-12">
+          <div>
+            <h3 class="mb-3 text-center fw-medium position-relative">Our Mission</h3>
+            <div class="card w-100 h-100 rounded-4 position-relative">
+              <div class="card-body d-flex align-items-center gap-4">
+                <figure class="p-3 border border-5 border-warning rounded-circle m-0 bg-warning bg-opacity-75 vmaIcon">
+                  <img src="assets/images/mission.png" alt="mission" width="70px">
+                </figure>
+                <div>
+                  <p class="card-text text-justify fw-medium">
+                    Our mission at Sattva Sansthan is to uplift vulnerable communities by providing essential support in
+                    healthcare, education, and sustainable livelihoods. We are dedicated to fostering positive change
+                    through programs that address immediate needs and empower individuals with knowledge and skills for
+                    long-term growth. Through our initiatives, such as vision camps, educational workshops, and
+                    skill-building programs, we aim to create self-sufficient communities and bridge gaps in access to
+                    resources, ultimately contributing to a more equitable and inclusive society.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-12">
-          <div class="card w-100 h-100 rounded-4">
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">Our Aim</h5>
-              <p class="card-text text-justify fw-medium">
-                Our aim at Sattva Sansthan is to drive meaningful, sustainable change for underserved communities by
-                addressing critical needs in education, healthcare, and livelihood support. We strive to empower
-                individuals with the resources and skills required to build a brighter, self-sufficient future. Through
-                targeted initiatives, we aim to break the cycle of poverty, foster resilience, and promote well-being,
-                creating a foundation for long-term community development and social transformation.
-              </p>
+        <div class="col-md-10 col-12">
+          <div>
+            <h3 class="mb-3 text-center fw-medium position-relative">Our Aim</h3>
+            <div class="card w-100 h-100 rounded-4 position-relative">
+              <div class="card-body d-flex align-items-center gap-4">
+                <figure class="p-3 border border-5 border-info rounded-circle m-0 bg-info bg-opacity-75 vmaIcon">
+                  <img src="assets/images/aim.svg" alt="aim" width="70px">
+                </figure>
+                <div>
+                  <p class="card-text text-justify fw-medium">
+                    Our aim at Sattva Sansthan is to drive meaningful, sustainable change for underserved communities by
+                    addressing critical needs in education, healthcare, and livelihood support. We strive to empower
+                    individuals with the resources and skills required to build a brighter, self-sufficient future.
+                    Through
+                    targeted initiatives, we aim to break the cycle of poverty, foster resilience, and promote
+                    well-being,
+                    creating a foundation for long-term community development and social transformation.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -383,19 +360,20 @@
   <!-- Vision, Mission and Aim content end here -->
 
   <!-- Our Team content starts here -->
-  <div class="container-fluid px-2 px-lg-3 py-4 aboutTeam">
+  <div class="container-fluid px-2 px-lg-3 py-5 aboutTeam">
     <div class="container">
       <div class="hed text-center">
         <h2 class="m-0">Our Team</h2>
       </div>
-      <div class="row justify-content-md-center gy-lg-0 gy-4">
+      <div class="row justify-content-md-center gy-lg-0 gy-4" style="padding-top: 80px;">
         <div class="col-lg-4 col-md-6 col-12">
-          <div class="card w-100 h-100">
-            <img src="assets/images/team/President.png" alt="President image" class="card-img-top"
-              style="height: 300px;">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Mr. Ramswroop Nagal</h5>
-              <h6 class="card-subtitle mb-2 fw-semibold text-body-secondary">President</h6>
+          <div class="card bg-info text-white border-4 border-info w-100 h-100 position-relative">
+            <figure class="p-2 m-0 bg-white border border-4 border-info rounded-circle position-absolute top-0 start-50 translate-middle">
+              <img src="assets/images/team/president.jpeg" alt="President image" class="rounded-circle" width="150px" height="150px">
+            </figure>
+            <div class="card-body" style="padding-top: 100px;">
+              <h5 class="card-title fw-bold text-center">Mr. Ramswroop Nagal</h5>
+              <h6 class="card-subtitle mb-2 fw-semibold text-center">President</h6>
               <p class="card-text text-justify fw-medium">
                 Mr. Ramswroop Nagal, President of our NGO, has over 15 years of expertise in the wood handicraft
                 industry and is passionately engaged in social service initiatives. His extensive business background
@@ -406,11 +384,13 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12">
-          <div class="card w-100 h-100">
-            <img src="assets/images/team/patron.png" alt="patron image" class="card-img-top" style="height: 300px;">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Mr. Sharvan Vaishnav</h5>
-              <h6 class="card-subtitle mb-2 fw-semibold text-body-secondary">Patron</h6>
+          <div class="card bg-info text-white border-4 border-info w-100 h-100 position-relative">
+            <figure class="p-2 m-0 bg-white border border-4 border-info rounded-circle position-absolute top-0 start-50 translate-middle">
+              <img src="assets/images/team/patron.png" alt="patron image" class="rounded-circle" width="150px" height="150px">
+            </figure>
+            <div class="card-body" style="padding-top: 100px;">
+              <h5 class="card-title fw-bold text-center">Mr. Sharvan Vaishnav</h5>
+              <h6 class="card-subtitle mb-2 fw-semibold text-center">Patron</h6>
               <p class="card-text text-justify fw-medium">
                 Mr. Sharvan Vaishnav, a respected real estate developer and committed advocate for social causes, serves
                 as the patron of our NGO. With a deep dedication to community welfare, he actively supports numerous
@@ -422,12 +402,13 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-12">
-          <div class="card w-100 h-100">
-            <img src="assets/images/team/secretary.png" alt="secretary image" class="card-img-top"
-              style="height: 300px;">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Ms. Neelam Ramawat</h5>
-              <h6 class="card-subtitle mb-2 fw-semibold text-body-secondary">Secretary</h6>
+          <div class="card bg-info text-white border-4 border-info w-100 h-100 position-relative">
+            <figure class="p-2 m-0 bg-white border border-4 border-info rounded-circle position-absolute top-0 start-50 translate-middle">
+              <img src="assets/images/team/secretary.png" alt="secretary image" class="rounded-circle" width="150px" height="150px">
+            </figure>
+            <div class="card-body" style="padding-top: 100px;">
+              <h5 class="card-title fw-bold text-center">Ms. Neelam Ramawat</h5>
+              <h6 class="card-subtitle mb-2 fw-semibold text-center">Secretary</h6>
               <p class="card-text text-justify fw-medium">
                 Ms. Neelam Ramawat, Secretary of our NGO, brings a rich background in education and finance with over a
                 decade of experience in the education sector. Holding a Master’s in Finance & Control and an MA in
@@ -557,7 +538,7 @@
                 </li>
                 <li class="w-50 p-1">
                   <a href="livelihood.html" class="text-white fw-medium">
-                    Livelihood
+                    Revitalization
                   </a>
                 </li>
                 <li class="w-50 p-1">
