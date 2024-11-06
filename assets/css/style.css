@@ -124,7 +124,7 @@ a {
 }
 
 .nav-content h1 {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     line-height: 22px;
     color: #666;
@@ -516,7 +516,8 @@ a {
 .img-back {
     height: 50vh;
     color: #e59625;
-    background: url("../images/education4.png") no-repeat top;
+    /* background: url("../images/education4.png") no-repeat top; */
+    background: url("../images/temp/whoAreWeBg.png") no-repeat top;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -549,7 +550,8 @@ a {
 }
 
 .supportUs .img-back {
-    background: url("../images/supportUsBg.jpg") no-repeat center;
+    /* background: url("../images/supportUsBg.jpg") no-repeat center; */
+    background: url("../images/temp/supportUsBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -560,7 +562,7 @@ a {
 }
 
 .healthcare .img-back {
-    background: url("../images/healthcareBg.png") no-repeat center;
+    background: url("../images/temp/healthcareBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -571,7 +573,7 @@ a {
 }
 
 .education .img-back {
-    background: url("../images/education3.jpg") no-repeat center;
+    background: url("../images/temp/educationBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -582,7 +584,29 @@ a {
 }
 
 .rural .img-back {
-    background: url("../images/rural2.jpg") no-repeat center;
+    background: url("../images/temp/ruralDevelopmentBg.webp") no-repeat center;
+    background-size: 100%;
+    /* vendor prefix start */
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -ms-background-size: 100%;
+    /* vendor prefix end */
+}
+
+.livelihood .img-back {
+    background: url("../images/temp/elderlyCommunityBg.webp") no-repeat center;
+    background-size: 100%;
+    /* vendor prefix start */
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -ms-background-size: 100%;
+    /* vendor prefix end */
+}
+
+.contact .img-back {
+    background: url("../images/temp/contactUsBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -694,6 +718,14 @@ a {
 
 .footerBlock {
     border-right: 1px solid white;
+}
+
+.footerLogo p strong {
+    font-size: 25px;
+}
+
+.footerLogo p span {
+    font-size: 14px;
 }
 
 .mobile-head {
