@@ -51,18 +51,42 @@ a {
     height: 40px;
     border: none;
     border-radius: 50%;
+    /* vendor prefix start */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    /* vendor prefix end */
     background: #e59625;
     color: white;
     font-size: 20px;
     display: flex;
     justify-content: center;
+    /* vendor prefix start */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    /* vendor prefix end */
     align-items: center;
+    /* vendor prefix start */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    /* vendor prefix end */
     position: fixed;
     bottom: 30px;
     right: -100%;
     z-index: 999;
     cursor: pointer;
     transition: 0.3s;
+    /* vendor prefix start */
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    /* vendor prefix end */
 }
 
 .fixedButton {
@@ -71,6 +95,12 @@ a {
     right: -60px;
     z-index: 9;
     transform: translateY(-50%) rotate(-90deg);
+    /* vendor prefix start */
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -moz-transform: translateY(-50%) rotate(-90deg);
+    -o-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    /* vendor prefix end */
 }
 
 .fixedButton button {
@@ -81,8 +111,26 @@ a {
     font-weight: 700;
     border: none;
     border-radius: 15px 15px 0px 0px;
+    /* vendor prefix start */
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    /* vendor prefix end */
     box-shadow: 0px 0px 8px 0px #333;
+    /* vendor prefix start */
+    -webkit-box-shadow: 0px 0px 8px 0px #333;
+    -moz-box-shadow: 0px 0px 8px 0px #333;
+    -o-box-shadow: 0px 0px 8px 0px #333;
+    -ms-box-shadow: 0px 0px 8px 0px #333;
+    /* vendor prefix end */
     animation: zoomInOut 1.5s infinite;
+    /* vendor prefix start */
+    -webkit-animation: zoomInOut 1.5s infinite;
+    -moz-animation: zoomInOut 1.5s infinite;
+    -o-animation: zoomInOut 1.5s infinite;
+    -ms-animation: zoomInOut 1.5s infinite;
+    /* vendor prefix end */
 }
 
 .top-right {
@@ -517,7 +565,7 @@ a {
     height: 35vh;
     color: #e59625;
     /* background: url("../images/education4.png") no-repeat top; */
-    background: url("../images/temp/whoAreWeBg.png") no-repeat top;
+    background: url("../images/whoAreWeBg.png") no-repeat top;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -549,9 +597,20 @@ a {
     /* vendor prefix end */
 }
 
+.mediaBanner .img-back {
+    background: url("../images/mediaBg.png") no-repeat top;
+    background-size: 100%;
+    /* vendor prefix start */
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    -ms-background-size: 100%;
+    /* vendor prefix end */
+}
+
 .supportUs .img-back {
     /* background: url("../images/supportUsBg.jpg") no-repeat center; */
-    background: url("../images/temp/supportUsBg.jpg") no-repeat center;
+    background: url("../images/supportUsBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -562,7 +621,7 @@ a {
 }
 
 .healthcare .img-back {
-    background: url("../images/temp/healthcareBg.jpg") no-repeat center;
+    background: url("../images/healthcareBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -573,7 +632,7 @@ a {
 }
 
 .education .img-back {
-    background: url("../images/temp/educationBg.jpg") no-repeat center;
+    background: url("../images/educationBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -584,7 +643,7 @@ a {
 }
 
 .rural .img-back {
-    background: url("../images/temp/ruralDevelopmentBg.webp") no-repeat center;
+    background: url("../images/ruralDevelopmentBg.webp") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -595,7 +654,7 @@ a {
 }
 
 .livelihood .img-back {
-    background: url("../images/temp/elderlyCommunityBg.webp") no-repeat center;
+    background: url("../images/elderlyCommunityBg.webp") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -606,7 +665,7 @@ a {
 }
 
 .contact .img-back {
-    background: url("../images/temp/contactUsBg.jpg") no-repeat center;
+    background: url("../images/contactUsBg.jpg") no-repeat center;
     background-size: 100%;
     /* vendor prefix start */
     -webkit-background-size: 100%;
@@ -630,6 +689,12 @@ a {
     top: 50%;
     left: -30px;
     transform: translateY(-50%);
+    /* vendor prefix start */
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    /* vendor prefix end */
     background: #e59625;
 }
 
@@ -640,10 +705,22 @@ a {
 
 .vmaIcon {
     transition: 0.8s;
+    /* vendor prefix start */
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    -ms-transition: 0.8s;
+    /* vendor prefix end */
 }
 
 .aboutTeam .card:hover .vmaIcon {
     transform: rotate(360deg);
+    /* vendor prefix start */
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    /* vendor prefix end */
 }
 
 .aboutTeam .card {
@@ -734,47 +811,15 @@ a {
     z-index: 9
 }
 
+.mobile-head h1, .offcanvas-header h1 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.mobile-head h1 span, .offcanvas-header h1 span {
+    font-size: 14px;
+}
+
 .mobile-head .logo {
     width: 60px;
-}
-
-.menu-sd {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 9999;
-    background-color: rgba(16, 157, 88, 0.9);
-    display: none;
-}
-
-.menu-top-smd i {
-    color: #FFF;
-    float: right;
-    font-size: 22px;
-    padding: 12px;
-    margin-right: 4px;
-    cursor: pointer;
-}
-
-.menu-itmen-sm li {
-    list-style: none;
-    color: #FFF !important;
-    margin-top: 13px;
-}
-
-.menu-itmen-sm li a {
-    color: #FFF !important;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.menu-itmen-sm li a {
-    margin-right: 20px;
-    font-size: 17px;
-}
-
-.menu-itmen-sm li a i {
-    margin-right: 15px;
 }

@@ -28,6 +28,14 @@
         height: 30vh;
     }
 
+    /* .aboutTeam .row {
+        padding: 24px;
+    }
+
+    .aboutTeam .col-lg-4.col-md-6.col-12 {
+        margin-top: 100px;
+    } */
+
     .footerBlock {
         border: none;
     }
@@ -38,6 +46,14 @@
 
     .media {
         padding: 25px;
+    }
+
+    .footerLogo p strong {
+        font-size: 20px;
+    }
+    
+    .footerLogo p span {
+        font-size: 14px;
     }
 }
 
