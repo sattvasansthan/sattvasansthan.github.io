@@ -18,6 +18,21 @@
         font-size: 16px;
     }
 
+    .fancybox-slide--image .fancybox-content {
+        width: 100% !important;
+        height: 70% !important;
+        position: static;
+        top: initial;
+        left: initial;
+        transform: translate(0px, 136px) !important;
+        /* vendor prefix start */
+        -webkit-transform: translate(0px, 136px) !important;
+        -moz-transform: translate(0px, 136px) !important;
+        -o-transform: translate(0px, 136px) !important;
+        -ms-transform: translate(0px, 136px) !important;
+        /* vendor prefix end */
+    }
+
     .events h2,
     .updates h2,
     .hed h2 {
@@ -27,25 +42,22 @@
     .img-back {
         height: 30vh;
     }
-
-    /* .aboutTeam .row {
-        padding: 24px;
-    }
-
-    .aboutTeam .col-lg-4.col-md-6.col-12 {
-        margin-top: 100px;
-    } */
-
-    .footerBlock {
-        border: none;
-    }
-
+    
     .legalTable {
         font-size: 14px;
     }
 
     .media {
         padding: 25px;
+    }
+
+    .contact :last-child {
+        position: static !important;
+        transform: translate(0, 0) !important;
+    }
+    
+    .footerBlock {
+        border: none;
     }
 
     .footerLogo p strong {
@@ -58,11 +70,26 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
-    .footerBlock {
-        border: none;
-    }
-
     .media {
         padding: 25px;
+    }
+
+    .fancybox-slide--image .fancybox-content {
+        width: 100% !important;
+        height: 70% !important;
+        position: static;
+        top: initial;
+        left: initial;
+        transform: translate(0px, 136px) !important;
+        /* vendor prefix start */
+        -webkit-transform: translate(0px, 136px) !important;
+        -moz-transform: translate(0px, 136px) !important;
+        -o-transform: translate(0px, 136px) !important;
+        -ms-transform: translate(0px, 136px) !important;
+        /* vendor prefix end */
+    }
+
+    .footerBlock {
+        border: none;
     }
 }

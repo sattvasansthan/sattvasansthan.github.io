@@ -476,6 +476,10 @@ a {
     /* vendor prefix end */
 }
 
+.motiveSection {
+    height: 550px;
+}
+
 .motiveSection:hover .motiveOver {
     opacity: 1;
     /* vendor prefix start */
