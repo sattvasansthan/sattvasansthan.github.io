@@ -1,4 +1,4 @@
-
+// the below code is of angular js
 var thankam = angular.module('thankam', ['ui.router']);
 var url = 'http://localhost/learning/le-admin/';
 thankam.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
@@ -55,6 +55,7 @@ thankam.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProv
     })
 }])
 
+// the below code is for go to top button
 const goToTop = document.querySelector('#goToTop');
 goToTop.addEventListener('click', () => {
   window.scrollTo({
@@ -63,6 +64,7 @@ goToTop.addEventListener('click', () => {
   });
 });
 
+// the below code is for updates carousel slider
 $(document).ready(function () {
   var owl = $("#updatesSlider");
   owl.owlCarousel({
@@ -71,7 +73,7 @@ $(document).ready(function () {
     nav: false,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
       200: {
@@ -87,6 +89,7 @@ $(document).ready(function () {
   });
 });
 
+// the below code is for gallery carousel slider
 $(document).ready(function () {
   var owl = $("#gallerySlider1, #gallerySlider2, #gallerySlider3");
   owl.owlCarousel({
@@ -95,7 +98,7 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsive: {
       200: {
@@ -111,6 +114,7 @@ $(document).ready(function () {
   });
 });
 
+// the below code is for the fancybox
 $('[data-fancybox="updates"]').fancybox({
   buttons: [
     "slideShow",
@@ -124,6 +128,7 @@ $('[data-fancybox="updates"]').fancybox({
   protect: true
 });
 
+// the below code is for fixing the header to top on scroll
 const fixHeader = () => {
   const goToTop = document.querySelector('#goToTop');
   const mobHeader = document.querySelector('#mobHeader');
@@ -143,10 +148,96 @@ const fixHeader = () => {
   }
 }
 
+// Select all carousel items for eventCard and motiveSection
+const eventCarouselItems = document.querySelectorAll('.carousel-item .eventCard span');
+const motiveCarouselItems = document.querySelectorAll('.carousel-item .motiveSection .motiveOver');
+const updateCarouselItems = document.querySelectorAll('.item .updatesBlock .updatesOver');
+const galleryCarouselItems = document.querySelectorAll('.item .galImgBlock .updatesOver');
+
+// Function to handle entry behavior for eventCarousel items
+const handleEventCardEntry = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('in-view'), 500);
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+};
+
+// Function to handle entry behavior for motiveSection items
+const handleMotiveSectionEntry = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('in-view'), 500);
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+};
+
+// Function to handle entry behavior for updatesBlock items
+const handleUpdateSectionEntry = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('in-view'), 100);
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+};
+
+// Function to handle entry behavior for galImgBlock items
+const handleGallerySectionEntry = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('in-view'), 100);
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+};
+
+// Create separate observers for each carousel type
+const eventCardObserver = new IntersectionObserver(handleEventCardEntry, { threshold: 0.3 });
+const motiveSectionObserver = new IntersectionObserver(handleMotiveSectionEntry, { threshold: 0.3 });
+const updateSectionObserver = new IntersectionObserver(handleUpdateSectionEntry, { threshold: 0.3 });
+const gallerySectionObserver = new IntersectionObserver(handleGallerySectionEntry, { threshold: 0.3 });
+
+// Initialize observers only if screen size is below 991px
+function initializeObservers() {
+  eventCarouselItems.forEach((item) => eventCardObserver.observe(item));
+  motiveCarouselItems.forEach((item) => motiveSectionObserver.observe(item));
+  updateCarouselItems.forEach((item) => updateSectionObserver.observe(item));
+  galleryCarouselItems.forEach((item) => gallerySectionObserver.observe(item));
+}
+
+// Disconnect observers to stop observing items
+function disconnectObservers() {
+  eventCardObserver.disconnect();
+  motiveSectionObserver.disconnect();
+  updateSectionObserver.disconnect();
+  gallerySectionObserver.disconnect();
+}
+
+// Handle screen size changes
+const mediaQuery = window.matchMedia('(max-width: 991px)');
+
+function handleScreenChange(e) {
+  if (e.matches) {
+    initializeObservers();
+  } else {
+    disconnectObservers();
+  }
+}
+
+// Initial check and event listener for screen resizing
+mediaQuery.addEventListener('change', handleScreenChange);
+handleScreenChange(mediaQuery);
+
+// the below code is for the input box animation
 document.querySelectorAll('.volFormBlock input, .volFormBlock textarea').forEach(input => {
   const label = input.nextElementSibling;
-
-  // Move label up if input is focused or has value
   input.addEventListener('focus', () => {
     label.classList.add('active');
   });
@@ -156,32 +247,53 @@ document.querySelectorAll('.volFormBlock input, .volFormBlock textarea').forEach
       label.classList.remove('active');
     }
   });
-
-  // Check if there is already a value (when page reloads)
   if (input.value) {
     label.classList.add('active');
   }
 });
 
+// the below code is for sending a mail
 const sendMail = (type) => {
-  if (type == "vol") {
-    let params = {
-      volunteerName: document.querySelector('#volunteerName').value,
-      volunteerEmail: document.querySelector('#volunteerEmail').value,
-      volunteerPhone: document.querySelector('#volunteerPhone').value,
-      volunteerMessage: document.querySelector('#volunteerMessage').value
+  let serviceId = "service_jddimzf";
+  let templateId;
+  let params;
+
+  if (type === "vol") {
+    params = {
+      volunteerName: document.querySelector('#volunteerName')?.value,
+      volunteerEmail: document.querySelector('#volunteerEmail')?.value,
+      volunteerPhone: document.querySelector('#volunteerPhone')?.value,
+      volunteerMessage: document.querySelector('#volunteerMessage')?.value
     };
-  
-    emailjs.send("service_jddimzf", "template_22r26fu", params).then(alert("Email Sent Successfully!"));
+    templateId = "template_22r26fu";
   }
-  else if (type == "contact") {
-    let params = {
-      contactName: document.querySelector('#contactName').value,
-      contactEmail: document.querySelector('#contactEmail').value,
-      contactPhone: document.querySelector('#contactPhone').value,
-      contactMessage: document.querySelector('#contactMessage').value
+  else if (type === "contact") {
+    params = {
+      contactName: document.querySelector('#contactName')?.value,
+      contactEmail: document.querySelector('#contactEmail')?.value,
+      contactPhone: document.querySelector('#contactPhone')?.value,
+      contactMessage: document.querySelector('#contactMessage')?.value
     };
-  
-    emailjs.send("service_jddimzf", "template_0on5tlr", params).then(alert("Email Sent Successfully!"));
+    templateId = "template_0on5tlr";
   }
-}
+  console.log(params);
+  emailjs.send(serviceId, templateId, params).then(() => alert("Email Sent Successfully!"));
+};
+
+// the below code is for form validation
+const forms = document.querySelectorAll('.needs-validation');
+Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (form.checkValidity()) {
+      form.classList.add('was-validated');
+      const type = form.id === 'contactForm' ? 'contact' : 'vol';
+      sendMail(type);
+      form.reset();
+      setTimeout(() => form.classList.remove('was-validated'), 0);
+    } else {
+      event.stopPropagation();
+    }
+    form.classList.add('was-validated');
+  }, false);
+});

@@ -300,38 +300,46 @@
       <div class="row gy-lg-0 gy-4 align-items-center">
         <div class="col-lg-6 col-12 order-lg-0 order-1">
           <div>
-            <form class="w-100 px-5 py-3 shadow volForm" onsubmit="this.reset()">
+            <form class="w-100 px-5 py-3 shadow volForm needs-validation" id="volFOrm" novalidate>
               <div class="mb-3 text-capitalize text-center fs-5 fw-bold">
-                volunteer registration
+                Volunteer Registration
               </div>
+
               <div class="my-3 volFormBlock position-relative">
-                <input type="text" id="volunteerName" class="w-100 p-1" name="volunteerName" placeholder=" ">
-                <label for="volunteerName" class="text-capitalize d-flex align-items-center gap-2">
-                  full name
-                </label>
+                <input type="text" id="volunteerName" class="w-100 p-1" name="volunteerName" placeholder=" " required>
+                <label for="volunteerName" class="text-capitalize d-flex align-items-center gap-2"> Full Name </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your full name.</div>
               </div>
+
               <div class="my-3 volFormBlock position-relative">
-                <input type="text" id="volunteerEmail" class="w-100 p-1" name="volunteerEmail" placeholder=" ">
-                <label for="volunteerEmail" class="text-capitalize d-flex align-items-center gap-2">
-                  email address
+                <input type="email" id="volunteerEmail" class="w-100 p-1" name="volunteerEmail" placeholder=" "
+                  required>
+                <label for="volunteerEmail" class="text-capitalize d-flex align-items-center gap-2"> Email Address
                 </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
               </div>
+
               <div class="my-3 volFormBlock position-relative">
-                <input type="text" id="volunteerPhone" class="w-100 p-1" name="volunteerPhone" placeholder=" ">
-                <label for="volunteerPhone" class="text-capitalize d-flex align-items-center gap-2">
-                  phone number
+                <input type="tel" id="volunteerPhone" class="w-100 p-1" name="volunteerPhone" placeholder=" " required
+                  pattern="[0-9]{10}">
+                <label for="volunteerPhone" class="text-capitalize d-flex align-items-center gap-2"> Phone Number
                 </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
               </div>
+
               <div class="my-3 volFormBlock position-relative">
                 <textarea id="volunteerMessage" class="w-100 p-1" style="height: 150px; resize: none;"
-                  name="volunteerMessage" placeholder=" "></textarea>
-                <label for="volunteerMessage" class="text-capitalize d-flex align-items-center gap-2">
-                  message
-                </label>
+                  name="volunteerMessage" placeholder=" " required></textarea>
+                <label for="volunteerMessage" class="text-capitalize d-flex align-items-center gap-2"> Message </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a message.</div>
               </div>
+
               <div class="mt-3 volFormBlock position-relative">
-                <button type="submit" onclick="sendMail('vol')"
-                  class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
+                <button type="submit" class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
               </div>
             </form>
           </div>

@@ -287,38 +287,44 @@
         </div>
         <div class="col-lg-6 col-12 order-lg-1 order-0">
           <div class="h-100">
-            <form class="w-100 px-5 py-4 volForm" onsubmit="this.reset()">
+            <form class="w-100 px-5 py-4 volForm needs-validation" id="contactForm" novalidate>
               <div class="mb-3 text-capitalize text-center fs-5 fw-bold">
-                get in touch with us
+                Get in Touch with Us
               </div>
+
               <div class="my-3 volFormBlock position-relative">
-                <input type="text" id="contactName" class="w-100 p-1" name="contactName" placeholder=" ">
-                <label for="contactName" class="text-capitalize d-flex align-items-center gap-2">
-                  full name
-                </label>
+                <input type="text" id="contactName" class="w-100 p-1" name="contactName" placeholder=" " required>
+                <label for="contactName" class="text-capitalize d-flex align-items-center gap-2"> Full Name </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your full name.</div>
               </div>
+
               <div class="my-3 volFormBlock position-relative">
-                <input type="text" id="contactEmail" class="w-100 p-1" name="contactEmail" placeholder=" ">
-                <label for="contactEmail" class="text-capitalize d-flex align-items-center gap-2">
-                  email address
+                <input type="email" id="contactEmail" class="w-100 p-1" name="contactEmail" placeholder=" " required>
+                <label for="contactEmail" class="text-capitalize d-flex align-items-center gap-2"> Email Address
                 </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
               </div>
+
               <div class="my-3 volFormBlock position-relative">
-                <input type="text" id="contactPhone" class="w-100 p-1" name="contactPhone" placeholder=" ">
-                <label for="contactPhone" class="text-capitalize d-flex align-items-center gap-2">
-                  phone number
-                </label>
+                <input type="tel" id="contactPhone" class="w-100 p-1" name="contactPhone" placeholder=" " required
+                  pattern="[0-9]{10}">
+                <label for="contactPhone" class="text-capitalize d-flex align-items-center gap-2"> Phone Number </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
               </div>
+
               <div class="my-3 volFormBlock position-relative">
                 <textarea id="contactMessage" class="w-100 p-1" style="height: 150px; resize: none;"
-                  name="contactMessage" placeholder=" "></textarea>
-                <label for="contactMessage" class="text-capitalize d-flex align-items-center gap-2">
-                  message
-                </label>
+                  name="contactMessage" placeholder=" " required></textarea>
+                <label for="contactMessage" class="text-capitalize d-flex align-items-center gap-2"> Message </label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a message.</div>
               </div>
+
               <div class="mt-3 volFormBlock position-relative">
-                <button type="submit" onclick="sendMail('contact')"
-                  class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
+                <button type="submit" class="d-block mx-auto py-1 px-4 fs-5 btn btn-success">Submit</button>
               </div>
             </form>
           </div>
@@ -327,15 +333,6 @@
     </div>
   </div>
   <!-- Contact us content ends here -->
-
-  <!-- Map starts here -->
-  <div>
-    <!-- <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.9308173284144!2d73.02576909999999!3d26.1989287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b0b24eaa96b%3A0xd25440ac41129952!2sSattvasansthan!5e0!3m2!1sen!2sin!4v1729619936359!5m2!1sen!2sin"
-      width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-  </div>
-  <!-- Map ends here -->
 
   <!-- Footer content starts here -->
   <footer class="container-fluid px-0 pt-4">

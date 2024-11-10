@@ -42,6 +42,23 @@
     .img-back {
         height: 30vh;
     }
+
+    .aboutTeam .card:hover {
+        box-shadow: none;
+        /* vendor prefix start */
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+        /* vendor prefix end */
+        transform: scale(1);
+        /* vendor prefix start */
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        /* vendor prefix end */
+    }
     
     .legalTable {
         font-size: 14px;
